@@ -358,24 +358,50 @@ body {
   line-height: var(--lineHeight);
   color: #333;
 }
+body h1 {
+  font-size: 8rem;
+  margin-top: 5rem;
+  margin-bottom: 0;
+}
+body h2 {
+  font-size: 2.6rem;
+  color: rgb(155, 154, 154);
+  word-spacing: 0.5rem;
+  margin: 0;
+}
+body .intro {
+  font-size: 1.8rem;
+}
+body a {
+  text-decoration: none;
+}
+body .boxShadowGeneral {
+  box-shadow: 0px 10px 14px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
 
 .dFlex {
   display: flex;
 }
 
 .container {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
 /*HEADER*/
 header {
+  padding: 1rem 0;
   background-color: var(--bgGeneral);
 }
 header .dFlex {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+header .dFlex img {
+  width: 90px;
+  display: block;
 }
 header .dFlex ul {
   padding: 0;
@@ -395,11 +421,9 @@ header .dFlex ul li .active:hover {
 }
 header .dFlex ul li a {
   padding: 1rem;
-  text-decoration: none;
   color: var(--colorWhite);
   border-bottom: 2px solid black;
   transition: 0.5s;
-  font-weight: bold;
 }
 header .dFlex ul li a:hover {
   color: var(--colorRed);
@@ -415,32 +439,34 @@ main {
   /*PHOTO/VIDEO*/
   /*CONTACT*/
 }
-main h1 {
-  font-size: 8rem;
-  text-transform: capitalize;
+main .projectsFlex {
+  display: flex;
+  padding-bottom: 3rem;
 }
-main .boxShadowContact {
-  box-shadow: 0px 10px 14px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+main .projectsFlex .projectsGeneralLeft {
+  width: 60%;
+}
+main .projectsFlex .projectsGeneralRight {
+  width: 40%;
+}
+main .projectsFlex .projectsGeneralRight img {
+  padding-top: 4rem;
+  display: block;
+  width: 100%;
 }
 main .contactFlex {
   display: flex;
 }
-main .contactFlex .contactGeneral {
-  width: 50%;
+main .contactFlex .contactGeneralLeft {
+  width: 60%;
 }
-main .contactFlex .contactGeneral img {
+main .contactFlex .contactGeneralRight {
+  width: 40%;
+}
+main .contactFlex .contactGeneralRight img {
   width: 100%;
   display: block;
-}
-main .contactFlex h1 {
-  margin-top: 5rem;
-  margin-bottom: 0;
-}
-main .contact h2 {
-  font-size: 2rem;
-  color: rgb(155, 154, 154);
-  word-spacing: 0.5rem;
-  margin: 0;
+  padding-top: 2rem;
 }
 main .contact .socialMediaContact {
   display: flex;
@@ -452,7 +478,6 @@ main .contact .socialMediaContact p {
   margin: 0;
 }
 main .contact .socialMediaContact p a {
-  text-decoration: none;
   color: #333;
   transition: 0.5s;
 }
@@ -467,7 +492,7 @@ main .contactForm fieldset {
 }
 main .contactForm fieldset legend {
   font-size: 3rem;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem;
 }
 main .contactForm fieldset p {
   margin: 0 0 1rem 0;
@@ -496,6 +521,7 @@ main .contactForm fieldset .contactMessage p {
 }
 main .contactForm fieldset .contactMessage textarea {
   width: 100%;
+  padding: 1rem;
   background: transparent;
   border: none;
   border-bottom: 2px solid black;
@@ -533,11 +559,7 @@ footer .socialMedia p {
 footer .socialMedia a {
   padding-right: 1rem;
 }
-footer .copyright {
-  display: none;
-}
 footer a {
-  text-decoration: none;
   color: var(--colorWhite);
   transition: 0.5s;
 }

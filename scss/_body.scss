@@ -3,4 +3,30 @@ body {
     font-size: 1.6rem;
     line-height: var(--lineHeight);
     color: #333;
+
+    h1 {
+        font-size: 8rem;
+        margin-top: 5rem;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+        color: rgb(155, 154, 154);
+        word-spacing: .5rem;
+        margin: 0;
+    }
+
+    .intro {
+        font-size: 1.8rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .boxShadowGeneral {
+        box-shadow: 0px 10px 14px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+    }
 }
