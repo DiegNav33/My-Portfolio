@@ -391,8 +391,8 @@ body .boxShadowGeneral {
 
 /*HEADER*/
 header {
-  padding: 1rem 0;
   background-color: var(--bgGeneral);
+  padding: 0.5rem 0;
 }
 header .dFlex {
   justify-content: space-between;
@@ -400,8 +400,12 @@ header .dFlex {
   flex-direction: row;
 }
 header .dFlex img {
-  width: 90px;
+  width: 80px;
   display: block;
+  transition: 0.5s;
+}
+header .dFlex img:hover {
+  filter: opacity(40%) blur(0.5px);
 }
 header .dFlex ul {
   padding: 0;
@@ -439,6 +443,20 @@ main {
   /*PHOTO/VIDEO*/
   /*CONTACT*/
 }
+main .aboutFlex {
+  display: flex;
+}
+main .aboutFlex .aboutGeneralLeft {
+  width: 70%;
+}
+main .aboutFlex .aboutGeneralRight {
+  width: 40%;
+}
+main .aboutFlex .aboutGeneralRight img {
+  padding-top: 4rem;
+  display: block;
+  width: 100%;
+}
 main .projectsFlex {
   display: flex;
   padding-bottom: 3rem;
@@ -453,6 +471,21 @@ main .projectsFlex .projectsGeneralRight img {
   padding-top: 4rem;
   display: block;
   width: 100%;
+}
+main .mediaFLex {
+  display: flex;
+}
+main .mediaFLex .mediaGeneralLeft {
+  width: 70%;
+  padding-right: 5rem;
+}
+main .mediaFLex .mediaGeneralRight {
+  width: 30%;
+}
+main .mediaFLex .mediaGeneralRight img {
+  width: 100%;
+  display: block;
+  padding-top: 2rem;
 }
 main .contactFlex {
   display: flex;

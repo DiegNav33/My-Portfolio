@@ -10,8 +10,8 @@
 /*HEADER*/
 
 header {
-    padding: 1rem 0;
     background-color: var(--bgGeneral);
+    padding: .5rem 0;
 
     .dFlex {
         justify-content: space-between;
@@ -19,8 +19,13 @@ header {
         flex-direction: row;
 
         img {
-            width: 90px;
+            width: 80px;
             display: block;
+            transition: .5s;
+
+            &:hover {
+                filter: opacity(40%) blur(.5px);
+            }
         }
 
         ul {
@@ -66,6 +71,24 @@ main {
     /*GENERAL*/
     /*INDEX*/
     /*ABOUT*/
+    .aboutFlex {
+        display: flex;
+
+        .aboutGeneralLeft {
+            width: 70%;
+        }
+
+        .aboutGeneralRight {
+            width: 40%;
+
+            img {
+                padding-top: 4rem;
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
     /*PROJECTS*/
     .projectsFlex {
         display: flex;
@@ -87,6 +110,27 @@ main {
     }
 
     /*PHOTO/VIDEO*/
+
+    .mediaFLex {
+        display: flex;
+
+        .mediaGeneralLeft {
+            width: 70%;
+            padding-right: 5rem;
+        }
+
+        .mediaGeneralRight {
+            width: 30%;
+
+            img {
+                width: 100%;
+                display: block;
+                padding-top: 2rem;
+            }
+
+        }
+    }
+
     /*CONTACT*/
     .contactFlex {
         display: flex;
