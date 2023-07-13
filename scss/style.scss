@@ -165,8 +165,13 @@ main {
                     color: #333;
                     transition: .5s;
 
-                    &:hover {
-                        color: var(--colorRed);
+                    i {
+                        color: #333;
+                        transition: .5s;
+
+                        &:hover {
+                            color: var(--colorRed);
+                        }
                     }
                 }
             }
@@ -252,6 +257,7 @@ main {
 /*FOOTER*/
 
 footer {
+
     background-color: var(--bgGeneral);
     color: var(--colorWhite);
 
@@ -268,15 +274,30 @@ footer {
 
         a {
             padding-right: 1rem;
+
+            i {
+                color: var(--colorWhite);
+                transition: .5s;
+
+                &:hover {
+                    color: #7E0100;
+                }
+            }
         }
     }
 
-    a {
-        color: var(--colorWhite);
-        transition: .5s;
-
-        &:hover {
+    .contactFooter {
+        i {
             color: var(--colorRed);
+        }
+
+        a {
+            color: var(--colorWhite);
+            transition: .5s;
+
+            &:hover {
+                color: var(--colorRed);
+            }
         }
     }
 }

@@ -514,7 +514,11 @@ main .contact .socialMediaContact p a {
   color: #333;
   transition: 0.5s;
 }
-main .contact .socialMediaContact p a:hover {
+main .contact .socialMediaContact p a i {
+  color: #333;
+  transition: 0.5s;
+}
+main .contact .socialMediaContact p a i:hover {
   color: var(--colorRed);
 }
 main .contactForm {
@@ -592,10 +596,20 @@ footer .socialMedia p {
 footer .socialMedia a {
   padding-right: 1rem;
 }
-footer a {
+footer .socialMedia a i {
   color: var(--colorWhite);
   transition: 0.5s;
 }
-footer a:hover {
+footer .socialMedia a i:hover {
+  color: #7E0100;
+}
+footer .contactFooter i {
+  color: var(--colorRed);
+}
+footer .contactFooter a {
+  color: var(--colorWhite);
+  transition: 0.5s;
+}
+footer .contactFooter a:hover {
   color: var(--colorRed);
 }/*# sourceMappingURL=style.css.map */
