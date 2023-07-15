@@ -546,6 +546,10 @@ main .contactForm fieldset .contactMessage input {
   background: transparent;
   border-bottom: 2px solid black;
 }
+main .contactForm fieldset .contactNameEmail input:focus,
+main .contactForm fieldset .contactMessage input:focus {
+  outline: none;
+}
 main .contactForm fieldset .contactNameEmail {
   display: flex;
 }
@@ -562,6 +566,9 @@ main .contactForm fieldset .contactMessage textarea {
   background: transparent;
   border: none;
   border-bottom: 2px solid black;
+}
+main .contactForm fieldset .contactMessage textarea:focus {
+  outline: none;
 }
 main .contactForm fieldset button {
   display: block;
