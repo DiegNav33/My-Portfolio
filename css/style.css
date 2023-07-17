@@ -518,8 +518,17 @@ main .contact .socialMediaContact p a i {
   color: #333;
   transition: 0.5s;
 }
-main .contact .socialMediaContact p a i:hover {
-  color: var(--colorRed);
+main .contact .socialMediaContact p a .fa-linkedin:hover {
+  color: rgb(34, 34, 255);
+}
+main .contact .socialMediaContact p a .fa-square-instagram:hover {
+  color: purple;
+}
+main .contact .socialMediaContact p a .fa-square-youtube:hover {
+  color: red;
+}
+main .contact .socialMediaContact p a .fa-square-github:hover {
+  color: rgb(250, 101, 47);
 }
 main .contactForm {
   margin: 5rem auto;
@@ -607,8 +616,17 @@ footer .socialMedia a i {
   color: var(--colorWhite);
   transition: 0.5s;
 }
-footer .socialMedia a i:hover {
-  color: #7E0100;
+footer .socialMedia a .fa-linkedin-in:hover {
+  color: rgb(34, 34, 255);
+}
+footer .socialMedia a .fa-instagram:hover {
+  color: purple;
+}
+footer .socialMedia a .fa-youtube:hover {
+  color: red;
+}
+footer .socialMedia a .fa-github:hover {
+  color: rgb(250, 101, 47);
 }
 footer .contactFooter i {
   color: var(--colorRed);

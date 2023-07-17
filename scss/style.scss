@@ -168,10 +168,18 @@ main {
                     i {
                         color: #333;
                         transition: .5s;
-
-                        &:hover {
-                            color: var(--colorRed);
-                        }
+                    }
+                    .fa-linkedin:hover {
+                        color: rgb(34, 34, 255);
+                    }
+                    .fa-square-instagram:hover{
+                        color: purple;
+                    }
+                    .fa-square-youtube:hover{
+                        color: red;
+                    }
+                    .fa-square-github:hover{
+                        color:rgb(250, 101, 47)
                     }
                 }
             }
@@ -286,10 +294,18 @@ footer {
             i {
                 color: var(--colorWhite);
                 transition: .5s;
-
-                &:hover {
-                    color: #7E0100;
-                }
+            }
+            .fa-linkedin-in:hover {
+                color: rgb(34, 34, 255);
+            }
+            .fa-instagram:hover{
+                color: purple;
+            }
+            .fa-youtube:hover{
+                color: red;
+            }
+            .fa-github:hover{
+                color:rgb(250, 101, 47)
             }
         }
     }
