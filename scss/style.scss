@@ -70,6 +70,38 @@ main {
 
     /*GENERAL*/
     /*INDEX*/
+    .homeFlex {
+        display: flex;
+        // padding-bottom: 3rem;
+        padding: 5rem 0;
+
+        .homeGeneralLeft {
+            width: 40%;
+            .radiusImg{
+                width: 450px;
+                height: 450px;
+                border-radius: 50%;
+                overflow: hidden;
+
+                img {
+                    position: relative;
+                    left: -110px;
+                    width: 150%;
+                    // padding-top: 4rem;
+                    display: block;
+    
+                }
+            }
+        }
+
+        .homeGeneralRight {
+            width: 60%; 
+            padding-left: 5rem;
+            h1{
+                font-size: 7rem;
+            }
+        }
+    }
     /*ABOUT*/
     .aboutFlex {
         display: flex;
@@ -127,7 +159,6 @@ main {
                 display: block;
                 padding-top: 2rem;
             }
-
         }
     }
 
@@ -212,9 +243,11 @@ main {
                     border: none;
                     background: transparent;
                     border-bottom: 2px solid black;
+                    transition: .5s;
 
                     &:focus {
                         outline: none;
+                        border-bottom: 2px solid rgb(188, 0, 0);
                     }
                 }
             }
@@ -240,9 +273,11 @@ main {
                     background: transparent;
                     border: none;
                     border-bottom: 2px solid black;
+                    transition: .5s;
 
                     &:focus {
                         outline: none;
+                        border-bottom: 2px solid rgb(188, 0, 0);
                     }
                 }
             }
@@ -305,8 +340,14 @@ footer {
                 color: red;
             }
             .fa-github:hover{
-                color:rgb(250, 101, 47)
+                color:rgb(250, 101, 47);
             }
+        }
+    }
+
+    .copyright{
+        p {
+            font-size: 1.2rem;
         }
     }
 

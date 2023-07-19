@@ -443,6 +443,32 @@ main {
   /*PHOTO/VIDEO*/
   /*CONTACT*/
 }
+main .homeFlex {
+  display: flex;
+  padding: 5rem 0;
+}
+main .homeFlex .homeGeneralLeft {
+  width: 40%;
+}
+main .homeFlex .homeGeneralLeft .radiusImg {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+main .homeFlex .homeGeneralLeft .radiusImg img {
+  position: relative;
+  left: -110px;
+  width: 150%;
+  display: block;
+}
+main .homeFlex .homeGeneralRight {
+  width: 60%;
+  padding-left: 5rem;
+}
+main .homeFlex .homeGeneralRight h1 {
+  font-size: 7rem;
+}
 main .aboutFlex {
   display: flex;
 }
@@ -554,10 +580,12 @@ main .contactForm fieldset .contactMessage input {
   border: none;
   background: transparent;
   border-bottom: 2px solid black;
+  transition: 0.5s;
 }
 main .contactForm fieldset .contactNameEmail input:focus,
 main .contactForm fieldset .contactMessage input:focus {
   outline: none;
+  border-bottom: 2px solid rgb(188, 0, 0);
 }
 main .contactForm fieldset .contactNameEmail {
   display: flex;
@@ -575,9 +603,11 @@ main .contactForm fieldset .contactMessage textarea {
   background: transparent;
   border: none;
   border-bottom: 2px solid black;
+  transition: 0.5s;
 }
 main .contactForm fieldset .contactMessage textarea:focus {
   outline: none;
+  border-bottom: 2px solid rgb(188, 0, 0);
 }
 main .contactForm fieldset button {
   display: block;
@@ -627,6 +657,9 @@ footer .socialMedia a .fa-youtube:hover {
 }
 footer .socialMedia a .fa-github:hover {
   color: rgb(250, 101, 47);
+}
+footer .copyright p {
+  font-size: 1.2rem;
 }
 footer .contactFooter i {
   color: var(--colorRed);
