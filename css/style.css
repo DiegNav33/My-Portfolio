@@ -360,7 +360,7 @@ body {
 }
 body h1 {
   font-size: 8rem;
-  margin-top: 5rem;
+  margin-top: 0;
   margin-bottom: 0;
 }
 body h2 {
@@ -371,6 +371,7 @@ body h2 {
 }
 body .intro {
   font-size: 1.8rem;
+  text-align: justify;
 }
 body a {
   text-decoration: none;
@@ -392,7 +393,7 @@ body .boxShadowGeneral {
 /*HEADER*/
 header {
   background-color: var(--bgGeneral);
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
 header .dFlex {
   justify-content: space-between;
@@ -445,7 +446,7 @@ main {
 }
 main .homeFlex {
   display: flex;
-  padding: 5rem 0;
+  padding: 6rem 0;
 }
 main .homeFlex .homeGeneralLeft {
   width: 40%;
@@ -464,28 +465,41 @@ main .homeFlex .homeGeneralLeft .radiusImg img {
 }
 main .homeFlex .homeGeneralRight {
   width: 60%;
-  padding-left: 5rem;
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 main .homeFlex .homeGeneralRight h1 {
   font-size: 7rem;
 }
 main .aboutFlex {
   display: flex;
+  padding: 4rem 0;
 }
 main .aboutFlex .aboutGeneralLeft {
-  width: 70%;
+  width: 60%;
 }
 main .aboutFlex .aboutGeneralRight {
   width: 40%;
 }
+main .aboutFlex .aboutGeneralRight .radiusImg {
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+}
 main .aboutFlex .aboutGeneralRight img {
-  padding-top: 4rem;
+  position: relative;
+  left: -50px;
+  top: -60px;
   display: block;
-  width: 100%;
+  width: 150%;
 }
 main .projectsFlex {
   display: flex;
-  padding-bottom: 3rem;
+  padding: 4rem 0;
 }
 main .projectsFlex .projectsGeneralLeft {
   width: 60%;
@@ -494,12 +508,12 @@ main .projectsFlex .projectsGeneralRight {
   width: 40%;
 }
 main .projectsFlex .projectsGeneralRight img {
-  padding-top: 4rem;
   display: block;
   width: 100%;
 }
 main .mediaFLex {
   display: flex;
+  padding: 4rem 0;
 }
 main .mediaFLex .mediaGeneralLeft {
   width: 70%;
@@ -508,13 +522,22 @@ main .mediaFLex .mediaGeneralLeft {
 main .mediaFLex .mediaGeneralRight {
   width: 30%;
 }
+main .mediaFLex .mediaGeneralRight .radiusImg {
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+}
 main .mediaFLex .mediaGeneralRight img {
+  position: relative;
+  top: -20px;
   width: 100%;
   display: block;
-  padding-top: 2rem;
 }
 main .contactFlex {
   display: flex;
+  padding: 4rem 0 0 0;
 }
 main .contactFlex .contactGeneralLeft {
   width: 60%;
@@ -525,7 +548,6 @@ main .contactFlex .contactGeneralRight {
 main .contactFlex .contactGeneralRight img {
   width: 100%;
   display: block;
-  padding-top: 2rem;
 }
 main .contact .socialMediaContact {
   display: flex;
@@ -630,6 +652,8 @@ main .contactForm fieldset button:hover {
 footer {
   background-color: var(--bgGeneral);
   color: var(--colorWhite);
+  padding: 0.5rem 0;
+  margin-top: 20rem;
 }
 footer .dFlex {
   align-items: center;

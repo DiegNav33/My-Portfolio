@@ -11,7 +11,7 @@
 
 header {
     background-color: var(--bgGeneral);
-    padding: .5rem 0;
+    padding: 1rem 0;
 
     .dFlex {
         justify-content: space-between;
@@ -73,7 +73,7 @@ main {
     .homeFlex {
         display: flex;
         // padding-bottom: 3rem;
-        padding: 5rem 0;
+        padding: 6rem 0;
 
         .homeGeneralLeft {
             width: 40%;
@@ -96,7 +96,11 @@ main {
 
         .homeGeneralRight {
             width: 60%; 
-            padding-left: 5rem;
+            padding-left: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
             h1{
                 font-size: 7rem;
             }
@@ -105,18 +109,29 @@ main {
     /*ABOUT*/
     .aboutFlex {
         display: flex;
+        padding: 4rem 0;
 
         .aboutGeneralLeft {
-            width: 70%;
+            width: 60%;
         }
 
         .aboutGeneralRight {
             width: 40%;
 
+            .radiusImg{
+                margin: 0 auto;
+                width: 350px;
+                height: 350px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
             img {
-                padding-top: 4rem;
+                position: relative;
+                left:-50px;
+                top:-60px;
                 display: block;
-                width: 100%;
+                width: 150%;
             }
         }
     }
@@ -124,7 +139,7 @@ main {
     /*PROJECTS*/
     .projectsFlex {
         display: flex;
-        padding-bottom: 3rem;
+        padding: 4rem 0;
 
         .projectsGeneralLeft {
             width: 60%;
@@ -134,7 +149,6 @@ main {
             width: 40%;
 
             img {
-                padding-top: 4rem;
                 display: block;
                 width: 100%;
             }
@@ -145,6 +159,7 @@ main {
 
     .mediaFLex {
         display: flex;
+        padding: 4rem 0;
 
         .mediaGeneralLeft {
             width: 70%;
@@ -153,11 +168,20 @@ main {
 
         .mediaGeneralRight {
             width: 30%;
+            
+            .radiusImg{
+                margin: 0 auto;
+                width: 350px;
+                height: 350px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
 
             img {
+                position: relative;
+                top:-20px;
                 width: 100%;
                 display: block;
-                padding-top: 2rem;
             }
         }
     }
@@ -165,6 +189,7 @@ main {
     /*CONTACT*/
     .contactFlex {
         display: flex;
+        padding: 4rem 0 0 0;
 
         .contactGeneralLeft {
             width: 60%;
@@ -176,7 +201,6 @@ main {
             img {
                 width: 100%;
                 display: block;
-                padding-top: 2rem;
             }
         }
     }
@@ -311,6 +335,8 @@ footer {
 
     background-color: var(--bgGeneral);
     color: var(--colorWhite);
+    padding: .5rem 0;
+    margin-top: 20rem; // A enlever, juste pour test pendant fabrication du site pour que footer soit tout en bas de page !!!!!!!!!!!!!!!!!!!!!!!!!!
 
     .dFlex {
         align-items: center;
