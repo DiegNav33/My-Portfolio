@@ -7,7 +7,7 @@
 @import "d-flex";
 @import "container";
 
-/*HEADER*/
+  /*HEADER*/
 
 header {
     background-color: var(--bgGeneral);
@@ -67,13 +67,21 @@ header {
 /*MAIN*/
 
 main {
-
+    
     /*GENERAL*/
     /*INDEX*/
+    video {
+        position:fixed;
+        // position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+      }
     .homeFlex {
-        display: flex;
-        // padding-bottom: 3rem;
-        padding: 6rem 0;
+        text-align: center;
+        padding: 25rem 0;
 
         .homeGeneralLeft {
             width: 40%;
@@ -336,8 +344,7 @@ footer {
     background-color: var(--bgGeneral);
     color: var(--colorWhite);
     padding: .5rem 0;
-    margin-top: 20rem; // A enlever, juste pour test pendant fabrication du site pour que footer soit tout en bas de page !!!!!!!!!!!!!!!!!!!!!!!!!!
-
+    
     .dFlex {
         align-items: center;
         justify-content: space-between;
