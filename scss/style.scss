@@ -77,8 +77,9 @@ main {
         bottom: 0;
         min-width: 100%;
         min-height: 100%;
+        // width: 100%;
         z-index: -1;
-      }
+    }
     .homeFlex {
         text-align: center;
         padding: 25rem 0;
@@ -140,6 +141,43 @@ main {
                 top:-60px;
                 display: block;
                 width: 150%;
+            }
+        }
+    }
+
+    .aboutContent{
+        article{
+            padding: 3rem 0;
+            text-align: center;
+            .aboutContentText{
+                padding-top: 5rem;
+
+                p{
+                    font-size: 2rem;
+                }
+            }
+        }
+        .aboutContentFlex{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            div{
+                padding-top: 5rem;
+                i{
+                    font-size: 5rem;
+                    color: var(--colorRed);
+                }
+
+                p{
+                    margin: 0;
+                    margin-top: 2rem;
+                }
+            }
+            .arrow{
+                i{
+                    font-size: 3rem;
+                }
             }
         }
     }
@@ -343,7 +381,7 @@ footer {
 
     background-color: var(--bgGeneral);
     color: var(--colorWhite);
-    padding: .5rem 0;
+    //padding: .5rem 0;
     
     .dFlex {
         align-items: center;

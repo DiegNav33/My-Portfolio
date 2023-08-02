@@ -364,9 +364,18 @@ body h1 {
   margin-bottom: 0;
 }
 body h2 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   color: rgb(155, 154, 154);
   word-spacing: 0.5rem;
+  margin: 0;
+}
+body h3 {
+  font-size: 2.4rem;
+  border-bottom: 3px solid var(--colorRed);
+  display: inline-block;
+  padding: 1rem;
+  word-spacing: 0.5rem;
+  text-transform: uppercase;
   margin: 0;
 }
 body .intro {
@@ -504,6 +513,35 @@ main .aboutFlex .aboutGeneralRight img {
   top: -60px;
   display: block;
   width: 150%;
+}
+main .aboutContent article {
+  padding: 3rem 0;
+  text-align: center;
+}
+main .aboutContent article .aboutContentText {
+  padding-top: 5rem;
+}
+main .aboutContent article .aboutContentText p {
+  font-size: 2rem;
+}
+main .aboutContent .aboutContentFlex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main .aboutContent .aboutContentFlex div {
+  padding-top: 5rem;
+}
+main .aboutContent .aboutContentFlex div i {
+  font-size: 5rem;
+  color: var(--colorRed);
+}
+main .aboutContent .aboutContentFlex div p {
+  margin: 0;
+  margin-top: 2rem;
+}
+main .aboutContent .aboutContentFlex .arrow i {
+  font-size: 3rem;
 }
 main .projectsFlex {
   display: flex;
@@ -660,7 +698,6 @@ main .contactForm fieldset button:hover {
 footer {
   background-color: var(--bgGeneral);
   color: var(--colorWhite);
-  padding: 0.5rem 0;
 }
 footer .dFlex {
   align-items: center;
