@@ -465,34 +465,10 @@ main .homeFlex {
   text-align: center;
   padding: 25rem 0;
 }
-main .homeFlex .homeGeneralLeft {
-  width: 40%;
-}
-main .homeFlex .homeGeneralLeft .radiusImg {
-  width: 450px;
-  height: 450px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-main .homeFlex .homeGeneralLeft .radiusImg img {
-  position: relative;
-  left: -110px;
-  width: 150%;
-  display: block;
-}
-main .homeFlex .homeGeneralRight {
-  width: 60%;
-  padding-left: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-main .homeFlex .homeGeneralRight h1 {
-  font-size: 7rem;
-}
 main .aboutFlex {
   display: flex;
   padding: 4rem 0;
+  align-items: center;
 }
 main .aboutFlex .aboutGeneralLeft {
   width: 60%;
@@ -543,8 +519,25 @@ main .aboutContent .aboutContentFlex div p {
 main .aboutContent .aboutContentFlex .arrow i {
   font-size: 3rem;
 }
+main .aboutContent article:nth-child(4) a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333;
+  padding: 1rem 2rem;
+  margin: 7rem auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  border: 3px solid black;
+  transition: 0.5s;
+}
+main .aboutContent article:nth-child(4) a:hover {
+  color: #fff;
+  background-color: #7E0100;
+}
 main .projectsFlex {
   display: flex;
+  align-items: center;
   padding: 4rem 0;
 }
 main .projectsFlex .projectsGeneralLeft {
@@ -559,14 +552,15 @@ main .projectsFlex .projectsGeneralRight img {
 }
 main .mediaFLex {
   display: flex;
+  align-items: center;
   padding: 4rem 0;
 }
 main .mediaFLex .mediaGeneralLeft {
-  width: 70%;
+  width: 60%;
   padding-right: 5rem;
 }
 main .mediaFLex .mediaGeneralRight {
-  width: 30%;
+  width: 40%;
 }
 main .mediaFLex .mediaGeneralRight .radiusImg {
   margin: 0 auto;
@@ -583,6 +577,7 @@ main .mediaFLex .mediaGeneralRight img {
 }
 main .contactFlex {
   display: flex;
+  align-items: center;
   padding: 4rem 0 0 0;
 }
 main .contactFlex .contactGeneralLeft {
