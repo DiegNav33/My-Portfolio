@@ -378,6 +378,12 @@ body h3 {
   text-transform: uppercase;
   margin: 0;
 }
+body h4 {
+  font-size: 2rem;
+  font-style: italic;
+  word-spacing: 0.5rem;
+  margin: 0;
+}
 body .intro {
   font-size: 1.8rem;
   text-align: justify;
@@ -465,6 +471,9 @@ main .homeFlex {
   text-align: center;
   padding: 25rem 0;
 }
+main .indexContent {
+  text-align: center;
+}
 main .aboutFlex {
   display: flex;
   padding: 4rem 0;
@@ -500,6 +509,15 @@ main .aboutContent article .aboutContentText {
 main .aboutContent article .aboutContentText p {
   font-size: 2rem;
 }
+main .aboutContent h4 {
+  padding: 3rem 0;
+}
+main .aboutContent ul {
+  list-style-type: none;
+}
+main .aboutContent ul li {
+  padding: 2rem 0;
+}
 main .aboutContent .aboutContentFlex {
   display: flex;
   justify-content: space-around;
@@ -519,7 +537,7 @@ main .aboutContent .aboutContentFlex div p {
 main .aboutContent .aboutContentFlex .arrow i {
   font-size: 3rem;
 }
-main .aboutContent article:nth-child(4) a {
+main .aboutContent article:nth-child(5) a {
   text-transform: uppercase;
   font-weight: bold;
   color: #333;
@@ -531,7 +549,7 @@ main .aboutContent article:nth-child(4) a {
   border: 3px solid black;
   transition: 0.5s;
 }
-main .aboutContent article:nth-child(4) a:hover {
+main .aboutContent article:nth-child(5) a:hover {
   color: #fff;
   background-color: #7E0100;
 }
@@ -549,6 +567,10 @@ main .projectsFlex .projectsGeneralRight {
 main .projectsFlex .projectsGeneralRight img {
   display: block;
   width: 100%;
+}
+main .projectsContent article {
+  text-align: center;
+  padding: 3rem 0;
 }
 main .mediaFLex {
   display: flex;
@@ -571,9 +593,26 @@ main .mediaFLex .mediaGeneralRight .radiusImg {
 }
 main .mediaFLex .mediaGeneralRight img {
   position: relative;
-  top: -20px;
+  top: -50px;
   width: 100%;
   display: block;
+}
+main .mediaContent article {
+  text-align: center;
+  padding: 3rem 0;
+}
+main .mediaContent article .mediaContentText {
+  padding-top: 5rem;
+}
+main .mediaContent article .mediaContentText p {
+  font-size: 2rem;
+}
+main .mediaContent .mediaArticle a {
+  color: #333;
+  transition: 0.5s;
+}
+main .mediaContent .mediaArticle a:hover {
+  color: #7E0100;
 }
 main .contactFlex {
   display: flex;
