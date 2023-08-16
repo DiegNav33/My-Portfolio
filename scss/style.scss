@@ -261,6 +261,100 @@ main {
                 }
             }
         }
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            justify-items: center;
+            margin: 5rem 0;
+
+            article{
+                position:relative;
+                width: 100%;
+                height: 500px;
+                max-height: 500px;
+                padding: 0;
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+                &.image{
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    
+                }
+                
+                &.img1{
+                    background-image: url("../images/grid/IMG_9966.jpg");
+                }
+                &.img2{
+                    background-image: url("../images/grid/IMG_3846.jpg");
+                }
+                &.img3{
+                    background-image: url("../images/grid/IMG_1010.jpg");
+                }
+                &.img4{
+                    background-image: url("../images/grid/IMG_2044.jpg");
+                }
+                &.img5{
+                    background-image: url("../images/grid/IMG_8299.jpg");
+                }
+                &.img6{
+                    background-image: url("../images/grid/IMG_9984.jpg");
+                }
+                &.img7{
+                    background-image: url("../images/grid/IMG_8457.jpg");
+                }
+                &.img8{
+                    background-image: url("../images/grid/IMG_5868.jpg");
+                }
+                &.img9{
+                    background-image: url("../images/grid/IMG_9414.jpg");
+                }
+                &.img10{
+                    background-image: url("../images/grid/IMG_3707.jpg");
+                }
+                &.img11{
+                    background-image: url("../images/grid/IMG_1103_jpg.jpg");
+                }
+                &.img12{
+                    background-image: url("../images/grid/IMG_4153.jpg");
+                }
+                &.img13{
+                    background-image: url("../images/grid/IMG_8029.jpg");
+                }
+                &.img14{
+                    background-image: url("../images/grid/IMG_3749.jpg");
+                }
+                &.img15{
+                    background-image: url("../images/grid/IMG_7825_jpg.jpg");
+                }
+
+                .title{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 2rem;
+                    font-family: arial, sans-serif;
+                    color: #fff;
+                    background-color: rgba(0, 0, 0, .2);
+                    letter-spacing: .4rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+                    z-index: 0;
+
+                    &:hover{
+                        opacity: 1;
+                        backdrop-filter: blur(2px) brightness(80%);
+                    }
+                }
+            }
+        }
     }
 
     /*CONTACT*/
