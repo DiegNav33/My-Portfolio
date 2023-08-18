@@ -84,12 +84,13 @@ main {
         padding: 25rem 0;
     }
     .indexContent{
+        display: none; // A supprimer la ligne pour remettre toutes les sections de la page home pour le sommaire du portfolio !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         text-align: center;
     }
     /*ABOUT*/
     .aboutFlex {
         display: flex;
-        padding: 4rem 0; 
+        padding: 10rem 0; 
         align-items: center; // A VOIR SI ENLEVER OU PAS, FAIRE TEST !!!!!!!
 
         .aboutGeneralLeft {
@@ -140,7 +141,7 @@ main {
         }
         .aboutContentFlex{
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
 
             div{
@@ -161,7 +162,7 @@ main {
                 }
             }
         }
-        article:nth-child(5) a {
+        article:nth-child(4) a {
             text-transform: uppercase;
             font-weight: bold;
             color: #333;
@@ -183,7 +184,7 @@ main {
     .projectsFlex {
         display: flex;
         align-items:center; // A VOIR SI ENLEVER OU PAS, FAIRE TEST !!!!!!!
-        padding: 4rem 0; 
+        padding: 10rem 0; 
 
         .projectsGeneralLeft {
             width: 60%;
@@ -192,10 +193,27 @@ main {
         .projectsGeneralRight {
             width: 40%;
 
-            img {
-                display: block;
-                width: 100%;
+            .radiusImg{
+                margin: 0 auto;
+                width: 350px;
+                height: 350px;
+                border-radius: 50%;
+                overflow: hidden;
             }
+
+            img {
+                position: relative;
+                left:-95px;
+                top:0px;
+                display: block;
+                width: 155%;
+                filter: brightness(85%);
+            }
+
+            // img {
+            //     display: block;
+            //     width: 100%;
+            // }
         }
     }
 
@@ -211,7 +229,7 @@ main {
     .mediaFLex {
         display: flex;
         align-items: center; // A VOIR SI ENLEVER OU PAS, FAIRE TEST !!!!!!!
-        padding: 4rem 0;
+        padding: 10rem 0;
 
         .mediaGeneralLeft {
             width: 60%;
@@ -355,25 +373,93 @@ main {
                 }
             }
         }
+
+        .travelArticles{
+            a{
+                text-decoration: underline;
+
+            }
+            article:nth-child(2), article:nth-child(4), article:nth-child(6){
+                text-align: left;
+            }
+            article:nth-child(3), article:nth-child(5), article:nth-child(7){
+                text-align: right;
+            }
+        }
+    }
+
+    /*BLOG*/
+    .blogFlex{
+        display: flex;
+        align-items: center;
+        padding: 10rem 0;
+
+        .blogGeneralLeft{
+            width: 60%;
+            padding-right: 5rem;
+        }
+
+        .blogGeneralRight{
+            width: 40%;
+
+            .radiusImg{
+                margin: 0 auto;
+                width: 350px;
+                height: 350px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+            img {
+                position: relative;
+                left:-60px;
+                width: 150%;
+                display: block;
+            }
+            .japanFlag{
+                left: -150px;
+            }
+        }
     }
 
     /*CONTACT*/
+    // .contactHeight{
+    //     height: 477.59px;
+    // }
     .contactFlex {
         display: flex;
         align-items: center; // A VOIR SI ENLEVER OU PAS, FAIRE TEST !!!!!!!
-        padding: 4rem 0 0 0;
+        padding: 10rem 0;
 
         .contactGeneralLeft {
             width: 60%;
         }
 
         .contactGeneralRight {
+            position: relative;
             width: 40%;
 
-            img {
-                width: 100%;
-                display: block;
+            .radiusImg{
+                margin: 0 auto;
+                width: 350px;
+                height: 350px;
+                border-radius: 50%;
+                overflow: hidden;
+
+                img { // A enlever position, remettre width a 100 si je veux remettre comme avant pour la photo et enlever .contactHeight aussi
+                    // position: absolute;
+                    // width: 130%;
+                    display: block;
+                    width: 170%;
+                    position: relative;
+                    top: -95px;
+                    left:-105px;
+                    // bottom: -239px;
+                    // left: -20px;
+                }
             }
+
+            
         }
     }
 

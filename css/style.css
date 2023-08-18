@@ -458,6 +458,7 @@ main {
   /*ABOUT*/
   /*PROJECTS*/
   /*PHOTO/VIDEO*/
+  /*BLOG*/
   /*CONTACT*/
 }
 main video {
@@ -473,11 +474,12 @@ main .homeFlex {
   padding: 25rem 0;
 }
 main .indexContent {
+  display: none;
   text-align: center;
 }
 main .aboutFlex {
   display: flex;
-  padding: 4rem 0;
+  padding: 10rem 0;
   align-items: center;
 }
 main .aboutFlex .aboutGeneralLeft {
@@ -521,7 +523,7 @@ main .aboutContent ul li {
 }
 main .aboutContent .aboutContentFlex {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 main .aboutContent .aboutContentFlex div {
@@ -538,7 +540,7 @@ main .aboutContent .aboutContentFlex div p {
 main .aboutContent .aboutContentFlex .arrow i {
   font-size: 3rem;
 }
-main .aboutContent article:nth-child(5) a {
+main .aboutContent article:nth-child(4) a {
   text-transform: uppercase;
   font-weight: bold;
   color: #333;
@@ -550,14 +552,14 @@ main .aboutContent article:nth-child(5) a {
   border: 3px solid black;
   transition: 0.5s;
 }
-main .aboutContent article:nth-child(5) a:hover {
+main .aboutContent article:nth-child(4) a:hover {
   color: #fff;
   background-color: #7E0100;
 }
 main .projectsFlex {
   display: flex;
   align-items: center;
-  padding: 4rem 0;
+  padding: 10rem 0;
 }
 main .projectsFlex .projectsGeneralLeft {
   width: 60%;
@@ -565,9 +567,20 @@ main .projectsFlex .projectsGeneralLeft {
 main .projectsFlex .projectsGeneralRight {
   width: 40%;
 }
+main .projectsFlex .projectsGeneralRight .radiusImg {
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+}
 main .projectsFlex .projectsGeneralRight img {
+  position: relative;
+  left: -95px;
+  top: 0px;
   display: block;
-  width: 100%;
+  width: 155%;
+  filter: brightness(85%);
 }
 main .projectsContent article {
   text-align: center;
@@ -576,7 +589,7 @@ main .projectsContent article {
 main .mediaFLex {
   display: flex;
   align-items: center;
-  padding: 4rem 0;
+  padding: 10rem 0;
 }
 main .mediaFLex .mediaGeneralLeft {
   width: 60%;
@@ -702,20 +715,68 @@ main .mediaContent .grid article .title:hover {
   -webkit-backdrop-filter: blur(2px) brightness(80%);
           backdrop-filter: blur(2px) brightness(80%);
 }
+main .mediaContent .travelArticles a {
+  text-decoration: underline;
+}
+main .mediaContent .travelArticles article:nth-child(2), main .mediaContent .travelArticles article:nth-child(4), main .mediaContent .travelArticles article:nth-child(6) {
+  text-align: left;
+}
+main .mediaContent .travelArticles article:nth-child(3), main .mediaContent .travelArticles article:nth-child(5), main .mediaContent .travelArticles article:nth-child(7) {
+  text-align: right;
+}
+main .blogFlex {
+  display: flex;
+  align-items: center;
+  padding: 10rem 0;
+}
+main .blogFlex .blogGeneralLeft {
+  width: 60%;
+  padding-right: 5rem;
+}
+main .blogFlex .blogGeneralRight {
+  width: 40%;
+}
+main .blogFlex .blogGeneralRight .radiusImg {
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+main .blogFlex .blogGeneralRight img {
+  position: relative;
+  left: -60px;
+  width: 150%;
+  display: block;
+}
+main .blogFlex .blogGeneralRight .japanFlag {
+  left: -150px;
+}
 main .contactFlex {
   display: flex;
   align-items: center;
-  padding: 4rem 0 0 0;
+  padding: 10rem 0;
 }
 main .contactFlex .contactGeneralLeft {
   width: 60%;
 }
 main .contactFlex .contactGeneralRight {
+  position: relative;
   width: 40%;
 }
-main .contactFlex .contactGeneralRight img {
-  width: 100%;
+main .contactFlex .contactGeneralRight .radiusImg {
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+main .contactFlex .contactGeneralRight .radiusImg img {
   display: block;
+  width: 170%;
+  position: relative;
+  top: -95px;
+  left: -105px;
 }
 main .contact .socialMediaContact {
   display: flex;
