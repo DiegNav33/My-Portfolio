@@ -203,10 +203,9 @@ main {
 
             img {
                 position: relative;
-                left:-95px;
-                top:0px;
+                top:-100px;
                 display: block;
-                width: 155%;
+                width: 100%;
                 filter: brightness(85%);
             }
 
@@ -219,8 +218,41 @@ main {
 
     .projectsContent{
         article{
+            margin: 5rem 0;
             text-align: center;
-            padding: 3rem 0;
+
+            p{
+                margin: 0;
+                padding: 5rem 0;
+                font-size: 2rem;
+            }
+        }
+
+        .mockupProject{
+
+            article{
+                background-color: #fafafa;
+                // background: linear-gradient(71deg, #080509, #1a171c, #080509);
+                box-shadow: 0px 0px 16px 8px rgba(0,0,0,0.1);
+                margin: 10rem 0;
+                padding: 3rem;
+                display: flex;
+                border: 1px solid transparent ;
+                border-radius: 5rem;
+                
+                div{
+                    width: 50%;
+
+                    img{
+                        width: 100%;
+                        display: block;
+                        cursor: pointer;
+                    }
+                }
+            }
+            article:nth-child(2), article:nth-child(4){
+                flex-direction: row-reverse;
+            }
         }
     }
 
@@ -249,8 +281,8 @@ main {
 
             img {
                 position: relative;
-                top:-50px;
-                width: 100%;
+                left: -115px;
+                width: 160%;
                 display: block;
             }
         }
@@ -421,11 +453,18 @@ main {
             }
         }
     }
+    .blogContent{
+        article{
+            text-align: center;
+            margin: 5rem 0;
+
+            p{
+                padding: 2rem 0;
+            }
+        }
+    }
 
     /*CONTACT*/
-    // .contactHeight{
-    //     height: 477.59px;
-    // }
     .contactFlex {
         display: flex;
         align-items: center; // A VOIR SI ENLEVER OU PAS, FAIRE TEST !!!!!!!
@@ -446,20 +485,15 @@ main {
                 border-radius: 50%;
                 overflow: hidden;
 
-                img { // A enlever position, remettre width a 100 si je veux remettre comme avant pour la photo et enlever .contactHeight aussi
-                    // position: absolute;
-                    // width: 130%;
+                img {
                     display: block;
                     width: 170%;
                     position: relative;
                     top: -95px;
                     left:-105px;
-                    // bottom: -239px;
-                    // left: -20px;
+                    filter: brightness(85%);
                 }
             }
-
-            
         }
     }
 

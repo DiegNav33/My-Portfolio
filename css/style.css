@@ -576,15 +576,39 @@ main .projectsFlex .projectsGeneralRight .radiusImg {
 }
 main .projectsFlex .projectsGeneralRight img {
   position: relative;
-  left: -95px;
-  top: 0px;
+  top: -100px;
   display: block;
-  width: 155%;
+  width: 100%;
   filter: brightness(85%);
 }
 main .projectsContent article {
+  margin: 5rem 0;
   text-align: center;
-  padding: 3rem 0;
+}
+main .projectsContent article p {
+  margin: 0;
+  padding: 5rem 0;
+  font-size: 2rem;
+}
+main .projectsContent .mockupProject article {
+  background-color: #fafafa;
+  box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.1);
+  margin: 10rem 0;
+  padding: 3rem;
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: 5rem;
+}
+main .projectsContent .mockupProject article div {
+  width: 50%;
+}
+main .projectsContent .mockupProject article div img {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+main .projectsContent .mockupProject article:nth-child(2), main .projectsContent .mockupProject article:nth-child(4) {
+  flex-direction: row-reverse;
 }
 main .mediaFLex {
   display: flex;
@@ -607,8 +631,8 @@ main .mediaFLex .mediaGeneralRight .radiusImg {
 }
 main .mediaFLex .mediaGeneralRight img {
   position: relative;
-  top: -50px;
-  width: 100%;
+  left: -115px;
+  width: 160%;
   display: block;
 }
 main .mediaContent article {
@@ -752,6 +776,13 @@ main .blogFlex .blogGeneralRight img {
 main .blogFlex .blogGeneralRight .japanFlag {
   left: -150px;
 }
+main .blogContent article {
+  text-align: center;
+  margin: 5rem 0;
+}
+main .blogContent article p {
+  padding: 2rem 0;
+}
 main .contactFlex {
   display: flex;
   align-items: center;
@@ -777,6 +808,7 @@ main .contactFlex .contactGeneralRight .radiusImg img {
   position: relative;
   top: -95px;
   left: -105px;
+  filter: brightness(85%);
 }
 main .contact .socialMediaContact {
   display: flex;
