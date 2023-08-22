@@ -597,15 +597,47 @@ main .projectsContent .mockupProject article {
   padding: 3rem;
   display: flex;
   border: 1px solid transparent;
-  border-radius: 5rem;
+  border-radius: 3rem;
 }
-main .projectsContent .mockupProject article div {
+main .projectsContent .mockupProject article .imageMockupProject {
   width: 50%;
+  display: flex;
+  align-items: center;
 }
-main .projectsContent .mockupProject article div img {
+main .projectsContent .mockupProject article .imageMockupProject img {
   width: 100%;
   display: block;
   cursor: pointer;
+}
+main .projectsContent .mockupProject article .textMockupProject {
+  width: 50%;
+}
+main .projectsContent .mockupProject article .textMockupProject p {
+  text-align: justify;
+  font-size: 1.8rem;
+  padding: 5rem 0;
+}
+main .projectsContent .mockupProject article .textMockupProject ul {
+  padding: 5rem 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .projectsContent .mockupProject article .textMockupProject ul li {
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  border-radius: 1.5rem;
+  background-color: #7E0100;
+  color: #fff;
+}
+main .projectsContent .mockupProject article span {
+  border-left: 0.5px solid #333;
+  display: inline-block;
+  height: auto;
+  margin: 0 5rem;
 }
 main .projectsContent .mockupProject article:nth-child(2), main .projectsContent .mockupProject article:nth-child(4) {
   flex-direction: row-reverse;
@@ -739,15 +771,6 @@ main .mediaContent .grid article .title:hover {
   -webkit-backdrop-filter: blur(2px) brightness(80%);
           backdrop-filter: blur(2px) brightness(80%);
 }
-main .mediaContent .travelArticles a {
-  text-decoration: underline;
-}
-main .mediaContent .travelArticles article:nth-child(2), main .mediaContent .travelArticles article:nth-child(4), main .mediaContent .travelArticles article:nth-child(6) {
-  text-align: left;
-}
-main .mediaContent .travelArticles article:nth-child(3), main .mediaContent .travelArticles article:nth-child(5), main .mediaContent .travelArticles article:nth-child(7) {
-  text-align: right;
-}
 main .blogFlex {
   display: flex;
   align-items: center;
@@ -776,12 +799,73 @@ main .blogFlex .blogGeneralRight img {
 main .blogFlex .blogGeneralRight .japanFlag {
   left: -150px;
 }
+main .blogFlex .blogGeneralRight .passportStamp {
+  left: -135px;
+  top: -70px;
+  width: 180%;
+}
 main .blogContent article {
   text-align: center;
   margin: 5rem 0;
 }
 main .blogContent article p {
   padding: 2rem 0;
+}
+main .blogArticlesGeneral article p {
+  font-size: 2.5rem;
+  font-style: oblique;
+  font-weight: bold;
+}
+main .blogArticlesGeneral .blogArticles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .blogArticlesGeneral .blogArticles .card {
+  width: 45%;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 5rem 0;
+}
+main .blogArticlesGeneral .blogArticles .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+main .blogArticlesGeneral .blogArticles .card .cardImage {
+  width: 100%;
+  height: 300px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .blogArticlesGeneral .blogArticles .card .cardContent {
+  padding: 20px;
+  text-align: center;
+}
+main .blogArticlesGeneral .blogArticles .card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+main .blogArticlesGeneral .blogArticles .card p {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+}
+main .blogArticlesGeneral .blogArticles .card a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--colorRed);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+}
+main .blogArticlesGeneral .blogArticles .card a:hover {
+  background-color: #0056b3;
 }
 main .contactFlex {
   display: flex;
