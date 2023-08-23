@@ -516,6 +516,7 @@ main .aboutContent h4 {
   padding: 3rem 0;
 }
 main .aboutContent ul {
+  padding: 0;
   list-style-type: none;
 }
 main .aboutContent ul li {
@@ -539,22 +540,6 @@ main .aboutContent .aboutContentFlex div p {
 }
 main .aboutContent .aboutContentFlex .arrow i {
   font-size: 3rem;
-}
-main .aboutContent article:nth-child(4) a {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #333;
-  padding: 1rem 2rem;
-  margin: 7rem auto;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: block;
-  border: 3px solid black;
-  transition: 0.5s;
-}
-main .aboutContent article:nth-child(4) a:hover {
-  color: #fff;
-  background-color: #7E0100;
 }
 main .projectsFlex {
   display: flex;
@@ -810,8 +795,6 @@ main .blogContent article {
 }
 main .blogContent article p {
   padding: 2rem 0;
-}
-main .blogArticlesGeneral article p {
   font-size: 2.5rem;
   font-style: oblique;
   font-weight: bold;
@@ -1037,4 +1020,669 @@ footer .contactFooter a {
 }
 footer .contactFooter a:hover {
   color: var(--colorRed);
+}
+
+@media screen and (min-width: 320px) and (max-width: 589.8px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  header nav.dFlex {
+    flex-direction: column;
+  }
+  header nav.dFlex ul {
+    align-items: center;
+    flex-direction: column;
+  }
+  header nav.dFlex ul li {
+    padding: 1rem;
+  }
+  main {
+    /*GENERAL*/
+    /*INDEX*/
+    /*ABOUT*/
+    /*PROJECTS*/
+    /*PHOTO/VIDEO*/
+    /*BLOG*/
+    /*CONTACT*/
+  }
+  main .homeFlex {
+    padding: 10rem 0;
+  }
+  main .homeFlex h1 {
+    font-size: 5rem;
+  }
+  main .homeFlex h2 {
+    font-size: 2.2rem;
+  }
+  main .aboutFlex {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+  }
+  main .aboutFlex .aboutGeneralLeft, main .aboutFlex .aboutGeneralRight {
+    width: 100%;
+    margin: 1rem;
+  }
+  main .aboutFlex .aboutGeneralLeft {
+    text-align: center;
+    padding-right: 0;
+  }
+  main .aboutFlex .aboutGeneralLeft .intro {
+    display: none;
+  }
+  main .aboutFlex .aboutGeneralRight .radiusImg {
+    width: 200px;
+    height: 200px;
+  }
+  main .aboutFlex .aboutGeneralRight .radiusImg img {
+    width: 150%;
+    top: -35px;
+    left: -45px;
+  }
+  main .aboutContent .aboutContentFlex {
+    margin-top: 6rem;
+    padding: 0;
+    flex-direction: column;
+  }
+  main .aboutContent .aboutContentFlex div {
+    padding: 0;
+  }
+  main .aboutContent .aboutContentFlex .arrow {
+    padding: 3rem 0;
+    transform: rotate(0.25turn);
+  }
+  main .aboutContent .funFactsArticle div {
+    padding: 2rem 0;
+  }
+  main .projectsFlex {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+  }
+  main .projectsFlex .projectsGeneralLeft, main .projectsFlex .projectsGeneralRight {
+    width: 100%;
+    margin: 1rem;
+  }
+  main .projectsFlex .projectsGeneralLeft {
+    text-align: center;
+  }
+  main .projectsFlex .projectsGeneralLeft .intro {
+    display: none;
+  }
+  main .projectsFlex .projectsGeneralRight .radiusImg {
+    width: 200px;
+    height: 200px;
+  }
+  main .projectsFlex .projectsGeneralRight .radiusImg img {
+    width: 100%;
+    top: -60px;
+    left: 0px;
+  }
+  main .projectsContent .mockupProject article, main .projectsContent .mockupProject article:nth-child(2), main .projectsContent .mockupProject article:nth-child(4) {
+    flex-direction: column;
+  }
+  main .projectsContent .mockupProject article .imageMockupProject, main .projectsContent .mockupProject article:nth-child(2) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(4) .imageMockupProject {
+    width: 100%;
+  }
+  main .projectsContent .mockupProject article .textMockupProject, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject {
+    width: 100%;
+  }
+  main .projectsContent .mockupProject article .textMockupProject p, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject p {
+    font-size: 1.6rem;
+    padding: 3rem 0;
+  }
+  main .projectsContent .mockupProject article .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul {
+    padding: 2rem 0 0 0;
+  }
+  main .projectsContent .mockupProject article .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul li {
+    width: 45%;
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem;
+  }
+  main .mediaFLex {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+  }
+  main .mediaFLex .mediaGeneralLeft, main .mediaFLex .mediaGeneralRight {
+    width: 100%;
+    margin: 1rem;
+  }
+  main .mediaFLex .mediaGeneralLeft {
+    text-align: center;
+    padding-right: 0;
+  }
+  main .mediaFLex .mediaGeneralLeft .intro {
+    display: none;
+  }
+  main .mediaFLex .mediaGeneralRight .radiusImg {
+    width: 200px;
+    height: 200px;
+  }
+  main .mediaFLex .mediaGeneralRight .radiusImg img {
+    width: 150%;
+    top: 0;
+    left: -55px;
+  }
+  main .blogFlex {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+  }
+  main .blogFlex .blogGeneralLeft, main .blogFlex .blogGeneralRight {
+    width: 100%;
+    margin: 1rem;
+  }
+  main .blogFlex .blogGeneralLeft {
+    text-align: center;
+    padding-right: 0;
+  }
+  main .blogFlex .blogGeneralRight .radiusImg {
+    width: 200px;
+    height: 200px;
+  }
+  main .blogFlex .blogGeneralRight .radiusImg img {
+    width: 150%;
+    top: 0;
+    left: -45px;
+  }
+  main .blogContent article p {
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+  main .blogArticlesGeneral .blogArticles {
+    flex-direction: column;
+  }
+  main .blogArticlesGeneral .blogArticles .card {
+    width: 100%;
+  }
+  main .contactFlex {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+  }
+  main .contactFlex .contactGeneralLeft, main .contactFlex .contactGeneralRight {
+    width: 100%;
+    margin: 1rem;
+  }
+  main .contactFlex .contactGeneralLeft {
+    text-align: center;
+  }
+  main .contactFlex .contactGeneralLeft .socialMediaContact {
+    display: none;
+  }
+  main .contactFlex .contactGeneralRight .radiusImg {
+    width: 200px;
+    height: 200px;
+  }
+  main .contactFlex .contactGeneralRight .radiusImg img {
+    width: 135%;
+    top: 0;
+    left: -30px;
+  }
+  main .contactForm fieldset legend {
+    text-align: center;
+  }
+  main .contactForm fieldset .contactNameEmail {
+    flex-direction: column;
+  }
+  main .contactForm fieldset .contactNameEmail p {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  main .contactForm fieldset .contactMessage p {
+    padding: 1rem 0;
+  }
+  main .contactForm fieldset button {
+    width: 50%;
+  }
+  footer {
+    padding: 1rem 0;
+  }
+  footer div.dFlex {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer div.dFlex .socialMedia {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  footer div.dFlex .socialMedia p {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+  footer div.dFlex .socialMedia a {
+    padding: 0 1rem 0 1rem;
+  }
+  footer div.dFlex .copyright p {
+    margin: 1rem;
+  }
+  footer div.dFlex .contactFooter {
+    display: none;
+  }
+}
+@media screen and (min-width: 590px) and (max-width: 798.8px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  header nav.dFlex {
+    flex-direction: column;
+  }
+  header nav.dFlex ul {
+    margin-top: 1rem;
+  }
+  header nav.dFlex ul li {
+    padding: 1rem;
+  }
+  main {
+    /*GENERAL*/
+    /*INDEX*/
+    /*ABOUT*/
+    /*PROJECTS*/
+    /*PHOTO/VIDEO*/
+    /*BLOG*/
+    /*CONTACT*/
+  }
+  main .homeFlex {
+    text-align: center;
+    padding: 25rem 0;
+  }
+  main .homeFlex h1 {
+    font-size: 5rem;
+  }
+  main .aboutFlex {
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+  }
+  main .aboutFlex .aboutGeneralLeft, main .aboutFlex .aboutGeneralRight {
+    width: 100%;
+    margin: 1rem;
+  }
+  main .aboutFlex .aboutGeneralLeft {
+    text-align: center;
+    padding-right: 0;
+  }
+  main .aboutFlex .aboutGeneralLeft .intro {
+    display: none;
+  }
+  main .aboutFlex .aboutGeneralRight {
+    margin-top: 3rem;
+  }
+  main .aboutFlex .aboutGeneralRight .radiusImg {
+    width: 250px;
+    height: 250px;
+  }
+  main .aboutFlex .aboutGeneralRight .radiusImg img {
+    width: 150%;
+    top: -35px;
+    left: -45px;
+  }
+  main .funFactsArticle .funFactsElt {
+    flex-wrap: wrap;
+  }
+  main .funFactsArticle .funFactsElt div {
+    width: 50%;
+  }
+  main .projectsFlex {
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+  }
+  main .projectsFlex .projectsGeneralLeft, main .projectsFlex .projectsGeneralRight {
+    width: 100%;
+    margin: 1rem;
+  }
+  main .projectsFlex .projectsGeneralLeft {
+    text-align: center;
+  }
+  main .projectsFlex .projectsGeneralLeft .intro {
+    display: none;
+  }
+  main .projectsFlex .projectsGeneralRight {
+    margin-top: 3rem;
+  }
+  main .projectsFlex .projectsGeneralRight .radiusImg {
+    width: 250px;
+    height: 250px;
+  }
+  main .projectsFlex .projectsGeneralRight .radiusImg img {
+    width: 100%;
+    top: -60px;
+    left: 0px;
+  }
+  main .projectsContent .mockupProject article, main .projectsContent .mockupProject article:nth-child(2), main .projectsContent .mockupProject article:nth-child(4) {
+    flex-direction: column;
+  }
+  main .projectsContent .mockupProject article .imageMockupProject, main .projectsContent .mockupProject article:nth-child(2) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(4) .imageMockupProject {
+    width: 100%;
+  }
+  main .projectsContent .mockupProject article .textMockupProject, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject {
+    width: 100%;
+  }
+  main .projectsContent .mockupProject article .textMockupProject p, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject p {
+    font-size: 1.8rem;
+    padding: 3rem 0;
+  }
+  main .projectsContent .mockupProject article .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul {
+    padding: 2rem 0 0 0;
+  }
+  main .projectsContent .mockupProject article .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul li {
+    width: 45%;
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem;
+  }
+  main .mediaFLex {
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+  }
+  main .mediaFLex .mediaGeneralLeft, main .mediaFLex .mediaGeneralRight {
+    width: 100%;
+    margin: 1rem;
+  }
+  main .mediaFLex .mediaGeneralLeft {
+    text-align: center;
+    padding-right: 0;
+  }
+  main .mediaFLex .mediaGeneralLeft .intro {
+    display: none;
+  }
+  main .mediaFLex .mediaGeneralRight {
+    margin-top: 3rem;
+  }
+  main .mediaFLex .mediaGeneralRight .radiusImg {
+    width: 250px;
+    height: 250px;
+  }
+  main .mediaFLex .mediaGeneralRight .radiusImg img {
+    width: 150%;
+    top: 0;
+    left: -70px;
+  }
+  main .grid article.img8 {
+    background-image: url("../images/grid/IMG_5868.jpg");
+    display: none;
+  }
+  main .blogFlex {
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+  }
+  main .blogFlex .blogGeneralLeft, main .blogFlex .blogGeneralRight {
+    width: 100%;
+    margin: 1rem;
+  }
+  main .blogFlex .blogGeneralLeft {
+    text-align: center;
+    padding-right: 0;
+  }
+  main .blogFlex .blogGeneralRight {
+    margin-top: 3rem;
+  }
+  main .blogFlex .blogGeneralRight .radiusImg {
+    width: 250px;
+    height: 250px;
+  }
+  main .blogFlex .blogGeneralRight .radiusImg img {
+    width: 150%;
+    top: 0;
+    left: -45px;
+  }
+  main .blogArticlesGeneral .blogArticles {
+    flex-direction: column;
+  }
+  main .blogArticlesGeneral .blogArticles .card {
+    width: 100%;
+  }
+  main .contactFlex {
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+  }
+  main .contactFlex .contactGeneralLeft, main .contactFlex .contactGeneralRight {
+    width: 100%;
+    margin: 1rem;
+  }
+  main .contactFlex .contactGeneralLeft {
+    text-align: center;
+  }
+  main .contactFlex .contactGeneralLeft .socialMediaContact {
+    display: none;
+  }
+  main .contactFlex .contactGeneralRight {
+    margin-top: 3rem;
+  }
+  main .contactFlex .contactGeneralRight .radiusImg {
+    width: 250px;
+    height: 250px;
+  }
+  main .contactFlex .contactGeneralRight .radiusImg img {
+    width: 135%;
+    top: 0;
+    left: -30px;
+  }
+  main .contactForm fieldset legend {
+    text-align: center;
+  }
+  main .contactForm fieldset .contactNameEmail {
+    flex-direction: column;
+  }
+  main .contactForm fieldset .contactNameEmail p {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  main .contactForm fieldset .contactMessage p {
+    padding: 1rem 0;
+  }
+  main .contactForm fieldset button {
+    width: 50%;
+  }
+  footer {
+    padding: 1rem 0;
+  }
+  footer div.dFlex {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer div.dFlex .socialMedia {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  footer div.dFlex .socialMedia p {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+  footer div.dFlex .socialMedia a {
+    padding: 0 1rem 0 1rem;
+  }
+  footer div.dFlex .copyright p {
+    margin: 1rem;
+  }
+  footer div.dFlex .contactFooter {
+    display: none;
+  }
+}
+@media screen and (min-width: 799px) and (max-width: 1022.8px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  main {
+    /*GENERAL*/
+    /*INDEX*/
+    /*ABOUT*/
+    /*PROJECTS*/
+    /*PHOTO/VIDEO*/
+    /*BLOG*/
+    /*CONTACT*/
+  }
+  main .homeFlex {
+    padding: 30rem 0;
+  }
+  main .aboutFlex {
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 0;
+  }
+  main .aboutFlex .aboutGeneralLeft {
+    width: 50%;
+    margin: 1rem;
+  }
+  main .aboutFlex .aboutGeneralLeft .intro {
+    display: none;
+  }
+  main .aboutFlex .aboutGeneralRight {
+    width: 50%;
+    margin-left: 1rem;
+  }
+  main .aboutFlex .aboutGeneralRight .radiusImg {
+    width: 280px;
+    height: 280px;
+  }
+  main .aboutFlex .aboutGeneralRight .radiusImg img {
+    width: 150%;
+    top: -35px;
+    left: -45px;
+  }
+  main .funFactsArticle .funFactsElt {
+    flex-wrap: wrap;
+  }
+  main .funFactsArticle .funFactsElt div {
+    width: 50%;
+  }
+  main .projectsFlex {
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 0;
+  }
+  main .projectsFlex .projectsGeneralLeft {
+    width: 50%;
+    margin-left: 1rem;
+  }
+  main .projectsFlex .projectsGeneralLeft .intro {
+    display: none;
+  }
+  main .projectsFlex .projectsGeneralRight {
+    width: 50%;
+  }
+  main .projectsFlex .projectsGeneralRight .radiusImg {
+    width: 280px;
+    height: 280px;
+  }
+  main .projectsFlex .projectsGeneralRight .radiusImg img {
+    width: 100%;
+    top: -60px;
+    left: 0px;
+  }
+  main .projectsContent .mockupProject article, main .projectsContent .mockupProject article:nth-child(2), main .projectsContent .mockupProject article:nth-child(4) {
+    flex-direction: column;
+  }
+  main .projectsContent .mockupProject article .imageMockupProject, main .projectsContent .mockupProject article:nth-child(2) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(4) .imageMockupProject {
+    width: 100%;
+  }
+  main .projectsContent .mockupProject article .textMockupProject, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject {
+    width: 100%;
+  }
+  main .projectsContent .mockupProject article .textMockupProject p, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject p {
+    font-size: 2rem;
+    padding: 3rem 0;
+  }
+  main .projectsContent .mockupProject article .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul {
+    padding: 2rem 0 0 0;
+  }
+  main .projectsContent .mockupProject article .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul li {
+    width: 45%;
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem;
+  }
+  main .mediaFLex {
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 0;
+  }
+  main .mediaFLex .mediaGeneralLeft {
+    padding: 0;
+    width: 50%;
+    margin-left: 1rem;
+  }
+  main .mediaFLex .mediaGeneralLeft .intro {
+    display: none;
+  }
+  main .mediaFLex .mediaGeneralRight {
+    width: 50%;
+  }
+  main .mediaFLex .mediaGeneralRight .radiusImg {
+    width: 280px;
+    height: 280px;
+  }
+  main .mediaFLex .mediaGeneralRight .radiusImg img {
+    width: 150%;
+    top: 0;
+    left: -80px;
+  }
+  main .grid article.img8 {
+    background-image: url("../images/grid/IMG_5868.jpg");
+    display: none;
+  }
+  main .blogFlex {
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 0;
+  }
+  main .blogFlex .blogGeneralLeft {
+    margin-left: 1rem;
+    width: 50%;
+    padding-right: 0;
+  }
+  main .blogFlex .blogGeneralRight {
+    width: 50%;
+  }
+  main .blogFlex .blogGeneralRight .radiusImg {
+    width: 280px;
+    height: 280px;
+  }
+  main .blogFlex .blogGeneralRight .radiusImg img {
+    width: 150%;
+    top: 0;
+    left: -70px;
+  }
+  main .blogArticlesGeneral .blogArticles {
+    flex-direction: column;
+  }
+  main .blogArticlesGeneral .blogArticles .card {
+    width: 100%;
+  }
+  main .contactFlex {
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 0;
+  }
+  main .contactFlex .contactGeneralLeft {
+    margin-left: 1rem;
+    width: 50%;
+  }
+  main .contactFlex .contactGeneralLeft .socialMediaContact {
+    display: none;
+  }
+  main .contactFlex .contactGeneralRight {
+    width: 50%;
+  }
+  main .contactFlex .contactGeneralRight .radiusImg {
+    width: 280px;
+    height: 280px;
+  }
+  main .contactFlex .contactGeneralRight .radiusImg img {
+    width: 135%;
+    top: 0;
+    left: -30px;
+  }
+  main .contactForm fieldset button {
+    width: 50%;
+  }
+  footer .contactFooter p:nth-child(3) {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

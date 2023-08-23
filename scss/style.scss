@@ -134,6 +134,7 @@ main {
             padding: 3rem 0;
         }
         ul {
+            padding: 0;
             list-style-type: none;
             li{
                 padding: 2rem 0;
@@ -160,22 +161,6 @@ main {
                 i{
                     font-size: 3rem;
                 }
-            }
-        }
-        article:nth-child(4) a {
-            text-transform: uppercase;
-            font-weight: bold;
-            color: #333;
-            padding: 1rem 2rem;
-            margin: 7rem auto;
-            width: fit-content;
-            display: block;
-            border: 3px solid black;
-            transition: .5s;
-            
-            &:hover{
-                color: #fff;
-                background-color: #7E0100;
             }
         }
     }
@@ -489,18 +474,14 @@ main {
 
             p{
                 padding: 2rem 0;
-            }
-        }
-    }
-
-    .blogArticlesGeneral{
-        article{
-            p{
                 font-size: 2.5rem;
                 font-style: oblique;
                 font-weight: bold;
             }
         }
+    }
+
+    .blogArticlesGeneral{
 
         .blogArticles{
             display: flex;
@@ -781,3 +762,5 @@ footer {
         }
     }
 }
+
+@import "media-query";
