@@ -1685,4 +1685,138 @@ footer .contactFooter a:hover {
   footer .contactFooter p:nth-child(3) {
     display: none;
   }
+}
+@media screen and (min-width: 1023px) and (max-width: 1250px) {
+  main .aboutFlex {
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .aboutFlex .aboutGeneralLeft {
+    width: 50%;
+  }
+  main .aboutFlex .aboutGeneralLeft .intro {
+    display: none;
+  }
+  main .aboutFlex .aboutGeneralRight {
+    width: 50%;
+    margin-left: 1rem;
+  }
+  main .aboutFlex .aboutGeneralRight .radiusImg {
+    width: 300px;
+    height: 300px;
+  }
+  main .projectsFlex {
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .projectsFlex .projectsGeneralLeft {
+    width: 50%;
+    margin-left: 1rem;
+  }
+  main .projectsFlex .projectsGeneralLeft .intro {
+    display: none;
+  }
+  main .projectsFlex .projectsGeneralRight {
+    width: 50%;
+  }
+  main .projectsFlex .projectsGeneralRight .radiusImg {
+    width: 300px;
+    height: 300px;
+  }
+  main .projectsContent .mockupProject article, main .projectsContent .mockupProject article:nth-child(2), main .projectsContent .mockupProject article:nth-child(4) {
+    flex-direction: column;
+  }
+  main .projectsContent .mockupProject article .imageMockupProject, main .projectsContent .mockupProject article:nth-child(2) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(4) .imageMockupProject {
+    width: 100%;
+  }
+  main .projectsContent .mockupProject article .textMockupProject, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject {
+    width: 100%;
+  }
+  main .projectsContent .mockupProject article .textMockupProject p, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject p {
+    font-size: 2rem;
+    padding: 3rem 0;
+  }
+  main .projectsContent .mockupProject article .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul {
+    padding: 2rem 0 0 0;
+  }
+  main .projectsContent .mockupProject article .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul li {
+    width: 30%;
+    margin: 1rem 2rem;
+  }
+  main .mediaFLex {
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .mediaFLex .mediaGeneralLeft {
+    padding: 0;
+    width: 50%;
+    margin-left: 1rem;
+  }
+  main .mediaFLex .mediaGeneralLeft .intro {
+    display: none;
+  }
+  main .mediaFLex .mediaGeneralRight {
+    width: 50%;
+  }
+  main .mediaFLex .mediaGeneralRight .radiusImg {
+    width: 300px;
+    height: 300px;
+  }
+  main .mediaFLex .mediaGeneralRight .radiusImg img {
+    width: 150%;
+    top: 0;
+    left: -80px;
+  }
+  main .grid article.img8 {
+    background-image: url("../images/grid/IMG_5868.jpg");
+    display: none;
+  }
+  main .blogFlex {
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .blogFlex .blogGeneralLeft {
+    margin-left: 1rem;
+    width: 50%;
+    padding-right: 0;
+  }
+  main .blogFlex .blogGeneralRight {
+    width: 50%;
+  }
+  main .blogFlex .blogGeneralRight .radiusImg {
+    width: 300px;
+    height: 300px;
+  }
+  main .blogFlex .blogGeneralRight .radiusImg img {
+    width: 150%;
+    top: 0;
+    left: -70px;
+  }
+  main .contactFlex {
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .contactFlex .contactGeneralLeft {
+    margin-left: 1rem;
+    width: 50%;
+  }
+  main .contactFlex .contactGeneralLeft .socialMediaContact {
+    display: none;
+  }
+  main .contactFlex .contactGeneralRight {
+    width: 50%;
+  }
+  main .contactFlex .contactGeneralRight .radiusImg {
+    width: 300px;
+    height: 300px;
+  }
+  main .contactFlex .contactGeneralRight .radiusImg img {
+    top: -80px;
+  }
+}
+@media screen and (min-width: 1150px) and (max-width: 1250px) {
+  main .grid article.img8 {
+    background-image: url("../images/grid/IMG_5868.jpg");
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

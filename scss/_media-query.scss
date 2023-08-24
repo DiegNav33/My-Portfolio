@@ -325,7 +325,6 @@
         }
     }
 }
-
 @media screen and (min-width:590px) and (max-width:798.8px){
     .container {
         width: 90%;
@@ -639,13 +638,11 @@
     }
     }
 }
-
 @media screen and (min-width:799px) and (max-width:1022.8px){
     .container {
         width: 90%;
         margin: 0 auto;
     }
-
     main{
         /*GENERAL*/
         /*INDEX*/
@@ -870,11 +867,176 @@
         }
     }
 }
-
-// @media screen and (min-width:1023px) and (max-width:1250px){
+ @media screen and (min-width:1023px) and (max-width:1250px){
+    main{
+        .aboutFlex{
+            justify-content: space-between;
+            align-items: center;
+            .aboutGeneralLeft{
+                width: 50%;
+                .intro{
+                    display: none;
+                }
+            }
     
-// }
+            .aboutGeneralRight{
+                width: 50%;
+                margin-left: 1rem;
+                .radiusImg{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+        .projectsFlex{
+            justify-content: space-between;
+            align-items: center;
+            .projectsGeneralLeft{
+                width: 50%;
+                margin-left: 1rem;
+                .intro{
+                    display: none;
+                }
+            }
+            .projectsGeneralRight{
+                width: 50%;
+                .radiusImg{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+        .projectsContent{
+            .mockupProject{
+                article, article:nth-child(2), article:nth-child(4) {
 
-// @media screen and (min-width:1450px){
-    
-// }
+                    flex-direction: column;
+
+                    .imageMockupProject{
+
+                        width: 100%;
+                    }
+
+                    .textMockupProject{
+                        width: 100%;
+
+                        p{
+                            font-size: 2rem;
+                            padding: 3rem 0;
+                        }
+
+                        ul{
+                            padding: 2rem 0 0 0;
+
+                            li{
+                                width: 30%;
+                                margin: 1rem 2rem;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+        .mediaFLex{
+            justify-content: space-between;
+            align-items: center;
+
+            .mediaGeneralLeft{
+                padding: 0;
+                width: 50%;
+                margin-left: 1rem;
+
+                .intro{
+                    display: none;
+                }
+            }
+
+            .mediaGeneralRight{
+                width: 50%;
+                .radiusImg{
+                    width: 300px;
+                    height: 300px;
+
+                    img{
+                        width: 150%;
+                        top: 0;
+                        left: -80px;
+                    }
+                }
+            }
+        }
+        .grid{
+            article{
+                &.img8{
+                    background-image: url("../images/grid/IMG_5868.jpg");
+                    display: none;
+                }
+            }
+        }
+        .blogFlex{
+            justify-content: space-between;
+            align-items: center;
+
+            .blogGeneralLeft{
+                margin-left: 1rem;
+                width: 50%;
+                padding-right: 0
+            }
+
+            .blogGeneralRight{
+                width: 50%;
+                
+                .radiusImg{
+                    width: 300px;
+                    height: 300px;
+
+                    img{
+                        width: 150%;
+                        top: 0;
+                        left: -70px;
+                    }
+                }
+            }
+        }
+        .contactFlex{
+            justify-content: space-between;
+            align-items: center;
+
+            .contactGeneralLeft{
+                margin-left: 1rem;
+                width: 50%;
+
+                .socialMediaContact{
+                   display: none;
+                }
+            }
+
+            .contactGeneralRight{
+                width: 50%;
+                .radiusImg{
+                    width: 300px;
+                    height: 300px;
+
+                    img{
+                         top: -80px;
+                     }
+                }
+            }
+        }
+    }
+ }
+ @media screen and (min-width:1150px) and (max-width:1250px){
+    main{
+        .grid{
+            article{
+                &.img8{
+                    background-image: url("../images/grid/IMG_5868.jpg");
+                    display: block;
+                }
+            }
+        }
+    }
+ }
+//  @media screen and (min-width:1450px){
+//  }
