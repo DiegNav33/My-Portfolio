@@ -350,7 +350,7 @@ template {
   --colorBody: #FAFAFA;
   --colorWhite: #fff;
   --colorRed: #7E0100;
-  --bgGeneral: black;
+  --bgGeneral: #0F110C;
 }
 
 body {
@@ -408,16 +408,22 @@ body .boxShadowGeneral {
 
 /*HEADER*/
 header {
-  background-color: var(--bgGeneral);
   padding: 1rem 0;
   position: sticky;
   top: 0px;
   z-index: 10;
+  transition: 0.5s;
 }
 header .dFlex {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+header .dFlex .anchorLogo {
+  border-bottom: none;
+}
+header .dFlex .anchorLogo:hover {
+  border-bottom: none;
 }
 header .dFlex img {
   width: 80px;
@@ -427,31 +433,63 @@ header .dFlex img {
 header .dFlex img:hover {
   filter: opacity(40%) blur(0.5px);
 }
-header .dFlex ul {
+
+.homeHeaderWhite {
+  background-color: transparent;
+}
+.homeHeaderWhite a {
+  padding: 1rem;
+  color: #333;
+  border-bottom: 2px solid transparent;
+  transition: 0.5s;
+}
+.homeHeaderWhite a:hover {
+  color: var(--colorRed);
+  border-bottom: 2px solid var(--colorRed);
+}
+.homeHeaderWhite ul {
   padding: 0;
   margin: 0;
   display: flex;
   list-style: none;
 }
-header .dFlex ul li {
+.homeHeaderWhite ul li {
   padding: 2rem 0 2rem 2rem;
 }
-header .dFlex ul li .active {
-  color: var(--colorRed);
-  border-bottom: none;
-}
-header .dFlex ul li .active:hover {
-  border-bottom: none;
-}
-header .dFlex ul li a {
-  padding: 1rem;
-  color: var(--colorWhite);
-  border-bottom: 2px solid black;
-  transition: 0.5s;
-}
-header .dFlex ul li a:hover {
+.homeHeaderWhite ul li .active {
   color: var(--colorRed);
   border-bottom: 2px solid var(--colorRed);
+}
+
+.homeHeaderBlack {
+  background-color: rgba(0, 0, 0, 0.88);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.homeHeaderBlack a {
+  padding: 1rem;
+  color: var(--colorWhite);
+  border-bottom: 2px solid transparent;
+  transition: 0.5s;
+}
+.homeHeaderBlack a:hover {
+  color: var(--colorRed);
+  border-bottom: 2px solid var(--colorRed);
+}
+.homeHeaderBlack ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+.homeHeaderBlack ul li {
+  padding: 2rem 0 2rem 2rem;
+}
+.homeHeaderBlack ul li .active {
+  color: var(--colorRed);
+}
+.homeHeaderBlack ul li .active:hover {
+  border-bottom: transparent;
 }
 
 /*MAIN*/
@@ -1860,6 +1898,6 @@ footer .contactFooter a:hover {
 @media screen and (min-height: 930px) {
   main .homeFlex {
     text-align: center;
-    padding: 25.5rem 0;
+    padding: 29rem 0;
   }
 }/*# sourceMappingURL=style.css.map */

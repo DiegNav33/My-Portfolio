@@ -8,20 +8,25 @@
 @import "container";
 
   /*HEADER*/
-
 header {
-
-    background-color: var(--bgGeneral);
     padding: 1rem 0;
      position: sticky;
      top:0px;
      z-index: 10;
+     transition: .5s;
 
     .dFlex {
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
 
+         .anchorLogo{
+            border-bottom: none;
+
+            &:hover{
+                border-bottom: none;
+            }
+         }
         img {
             width: 80px;
             display: block;
@@ -32,40 +37,76 @@ header {
             }
         }
 
-        ul {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            list-style: none;
+       
+    }
 
-            li {
-                padding: 2rem 0 2rem 2rem;
+}
+.homeHeaderWhite{
+    background-color: transparent;
 
-                .active {
-                    color: var(--colorRed);
-                    border-bottom: none;
+    a{
+        padding: 1rem;
+        color: #333;
+        border-bottom: 2px solid transparent;
+        transition: .5s;
 
-                    &:hover {
-                        border-bottom: none;
-                    }
-                }
+        &:hover {
+            color: var(--colorRed);
+            border-bottom: 2px solid var(--colorRed);
+            
+        }
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        list-style: none;
 
-                a {
-                    padding: 1rem;
-                    color: var(--colorWhite);
-                    border-bottom: 2px solid black;
-                    transition: .5s;
+        li {
+            padding: 2rem 0 2rem 2rem;
 
-                    &:hover {
-                        color: var(--colorRed);
-                        border-bottom: 2px solid var(--colorRed);
-                        ;
-                    }
+            .active {
+                color: var(--colorRed);
+                border-bottom: 2px solid var(--colorRed);
+
+            }
+        }
+    }
+}
+
+.homeHeaderBlack{
+    background-color: rgba(0, 0, 0, .88);
+    backdrop-filter: blur(10px);
+
+    a {
+        padding: 1rem;
+        color: var(--colorWhite);
+        border-bottom: 2px solid transparent;
+        transition: .5s;
+
+        &:hover {
+            color: var(--colorRed);
+            border-bottom: 2px solid var(--colorRed);
+        }
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        list-style: none;
+
+        li {
+            padding: 2rem 0 2rem 2rem;
+
+            .active {
+                color: var(--colorRed);
+
+                 &:hover {
+                    border-bottom: transparent;
                 }
             }
         }
     }
-
 }
 
 /*MAIN*/
