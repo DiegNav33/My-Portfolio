@@ -4,6 +4,7 @@
         margin: 0 auto;
     }
     header{
+        position: relative;
         nav.dFlex{
             flex-direction: column;
 
@@ -869,6 +870,7 @@
 }
  @media screen and (min-width:1023px) and (max-width:1250px){
     main{
+        /*ABOUT*/
         .aboutFlex{
             justify-content: space-between;
             align-items: center;
@@ -888,6 +890,7 @@
                 }
             }
         }
+        /*PROJECTS*/
         .projectsFlex{
             justify-content: space-between;
             align-items: center;
@@ -938,6 +941,7 @@
                 
             }
         }
+        /*PHOTO/VIDEO*/
         .mediaFLex{
             justify-content: space-between;
             align-items: center;
@@ -974,6 +978,7 @@
                 }
             }
         }
+        /*BLOG*/
         .blogFlex{
             justify-content: space-between;
             align-items: center;
@@ -999,6 +1004,7 @@
                 }
             }
         }
+        /*CONTACT*/
         .contactFlex{
             justify-content: space-between;
             align-items: center;
@@ -1038,5 +1044,54 @@
         }
     }
  }
-//  @media screen and (min-width:1450px){
-//  }
+ @media screen and (min-width:1538px){
+    main{
+        .mediaContent{
+            .grid{
+                article{
+                    &.img16{
+                        display: block;
+                    }
+                }
+            }
+        }
+    } 
+ }
+@media screen and (min-width:1690px){
+    main{
+        .projectsContent{
+            .mockupProject{
+                article:nth-child(1), article:nth-child(3), article:nth-child(5), article:nth-child(2), article:nth-child(4) {
+                    .imageMockupProject{
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            width: 80%;
+                        }
+                    }
+                    .textMockupProject{
+                        p{
+                            font-size: 2rem;
+                            padding: 3rem 0;
+                        }
+                        ul{
+                            padding: 3rem 0;
+                            li{
+                                width: 40%;
+                                margin: 1rem 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+@media screen and (min-height:930px){
+    main{
+        .homeFlex {
+            text-align: center;
+            padding: 25.5rem 0;
+        }
+    }
+}

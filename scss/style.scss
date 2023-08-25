@@ -10,8 +10,12 @@
   /*HEADER*/
 
 header {
+
     background-color: var(--bgGeneral);
     padding: 1rem 0;
+     position: sticky;
+     top:0px;
+     z-index: 10;
 
     .dFlex {
         justify-content: space-between;
@@ -67,25 +71,22 @@ header {
 /*MAIN*/
 
 main {
+    position: relative;
     
     /*GENERAL*/
     /*INDEX*/
     video {
-        position:fixed;
+        position:absolute;
         right: 0;
         bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
+        // min-width: 100%;
+        // min-height: 100%;
         // width: 100%;
         z-index: -1;
     }
     .homeFlex {
         text-align: center;
         padding: 25rem 0;
-    }
-    .indexContent{
-        display: none; // A supprimer la ligne pour remettre toutes les sections de la page home pour le sommaire du portfolio !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        text-align: center;
     }
     /*ABOUT*/
     .aboutFlex {
@@ -403,6 +404,10 @@ main {
                 }
                 &.img15{
                     background-image: url("../images/grid/IMG_7825_jpg.jpg");
+                }
+                &.img16{
+                    background-image: url("../images/grid/tehran-iran-media.jpg");
+                    display: none;
                 }
 
                 .title{

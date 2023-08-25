@@ -410,6 +410,9 @@ body .boxShadowGeneral {
 header {
   background-color: var(--bgGeneral);
   padding: 1rem 0;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
 }
 header .dFlex {
   justify-content: space-between;
@@ -453,6 +456,7 @@ header .dFlex ul li a:hover {
 
 /*MAIN*/
 main {
+  position: relative;
   /*GENERAL*/
   /*INDEX*/
   /*ABOUT*/
@@ -462,20 +466,14 @@ main {
   /*CONTACT*/
 }
 main video {
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
   z-index: -1;
 }
 main .homeFlex {
   text-align: center;
   padding: 25rem 0;
-}
-main .indexContent {
-  display: none;
-  text-align: center;
 }
 main .aboutFlex {
   display: flex;
@@ -735,6 +733,10 @@ main .mediaContent .grid article.img14 {
 }
 main .mediaContent .grid article.img15 {
   background-image: url("../images/grid/IMG_7825_jpg.jpg");
+}
+main .mediaContent .grid article.img16 {
+  background-image: url("../images/grid/tehran-iran-media.jpg");
+  display: none;
 }
 main .mediaContent .grid article .title {
   position: absolute;
@@ -1026,6 +1028,9 @@ footer .contactFooter a:hover {
   .container {
     width: 90%;
     margin: 0 auto;
+  }
+  header {
+    position: relative;
   }
   header nav.dFlex {
     flex-direction: column;
@@ -1687,6 +1692,13 @@ footer .contactFooter a:hover {
   }
 }
 @media screen and (min-width: 1023px) and (max-width: 1250px) {
+  main {
+    /*ABOUT*/
+    /*PROJECTS*/
+    /*PHOTO/VIDEO*/
+    /*BLOG*/
+    /*CONTACT*/
+  }
   main .aboutFlex {
     justify-content: space-between;
     align-items: center;
@@ -1818,5 +1830,36 @@ footer .contactFooter a:hover {
   main .grid article.img8 {
     background-image: url("../images/grid/IMG_5868.jpg");
     display: block;
+  }
+}
+@media screen and (min-width: 1538px) {
+  main .mediaContent .grid article.img16 {
+    display: block;
+  }
+}
+@media screen and (min-width: 1690px) {
+  main .projectsContent .mockupProject article:nth-child(1) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(3) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(5) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(2) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(4) .imageMockupProject {
+    justify-content: center;
+    align-items: center;
+  }
+  main .projectsContent .mockupProject article:nth-child(1) .imageMockupProject img, main .projectsContent .mockupProject article:nth-child(3) .imageMockupProject img, main .projectsContent .mockupProject article:nth-child(5) .imageMockupProject img, main .projectsContent .mockupProject article:nth-child(2) .imageMockupProject img, main .projectsContent .mockupProject article:nth-child(4) .imageMockupProject img {
+    width: 80%;
+  }
+  main .projectsContent .mockupProject article:nth-child(1) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(3) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(5) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject p {
+    font-size: 2rem;
+    padding: 3rem 0;
+  }
+  main .projectsContent .mockupProject article:nth-child(1) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(3) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(5) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul {
+    padding: 3rem 0;
+  }
+  main .projectsContent .mockupProject article:nth-child(1) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(3) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(5) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul li {
+    width: 40%;
+    margin: 1rem 2rem;
+  }
+}
+@media screen and (min-height: 930px) {
+  main .homeFlex {
+    text-align: center;
+    padding: 25.5rem 0;
   }
 }/*# sourceMappingURL=style.css.map */
