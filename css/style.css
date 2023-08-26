@@ -539,11 +539,11 @@ main .aboutFlex .aboutGeneralRight img {
   width: 150%;
 }
 main .aboutContent article {
-  padding: 3rem 0;
+  padding: 5rem 0;
   text-align: center;
 }
 main .aboutContent article .aboutContentText {
-  padding-top: 5rem;
+  padding: 5rem 0;
 }
 main .aboutContent article .aboutContentText p {
   font-size: 2rem;
@@ -561,21 +561,30 @@ main .aboutContent ul li {
 main .aboutContent .aboutContentFlex {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
 }
 main .aboutContent .aboutContentFlex div {
-  padding-top: 5rem;
+  width: 20%;
+}
+main .aboutContent .aboutContentFlex div img {
+  width: 100%;
 }
 main .aboutContent .aboutContentFlex div i {
-  font-size: 5rem;
-  color: var(--colorRed);
+  font-size: 3rem;
+  color: #5941A9;
 }
 main .aboutContent .aboutContentFlex div p {
   margin: 0;
   margin-top: 2rem;
 }
-main .aboutContent .aboutContentFlex .arrow i {
-  font-size: 3rem;
+main .aboutContent .funFactsElt {
+  padding: 5rem 0;
+}
+main .aboutContent .funFactsElt div {
+  width: 25%;
+}
+main .aboutContent .funFactsElt div img {
+  width: 60%;
 }
 main .projectsFlex {
   display: flex;
@@ -610,6 +619,21 @@ main .projectsContent article p {
   margin: 0;
   padding: 5rem 0;
   font-size: 2rem;
+}
+main .projectsContent .mockupProject .articleLeft {
+  transform: translateX(-10%);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+main .projectsContent .mockupProject .articleRight {
+  overflow: hidden;
+  transform: translateX(10%);
+  opacity: 0;
+  transition: 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+main .projectsContent .mockupProject .activeTranslateArticle {
+  transform: translateX(0%);
+  opacity: 1;
 }
 main .projectsContent .mockupProject article {
   background-color: #fafafa;
@@ -888,7 +912,7 @@ main .blogArticlesGeneral .blogArticles .card a {
   transition: background-color 0.5s ease;
 }
 main .blogArticlesGeneral .blogArticles .card a:hover {
-  background-color: #0056b3;
+  background-color: #5941A9;
 }
 main .contactFlex {
   display: flex;
@@ -1127,16 +1151,28 @@ footer .contactFooter a:hover {
     margin-top: 6rem;
     padding: 0;
     flex-direction: column;
+    align-items: center;
   }
   main .aboutContent .aboutContentFlex div {
     padding: 0;
+    width: 30%;
   }
-  main .aboutContent .aboutContentFlex .arrow {
+  main .aboutContent .aboutContentFlex i {
     padding: 3rem 0;
     transform: rotate(0.25turn);
   }
-  main .aboutContent .funFactsArticle div {
+  main .aboutContent .funFactsArticle .funFactsElt {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: end;
+  }
+  main .aboutContent .funFactsArticle .funFactsElt div {
+    width: 35%;
     padding: 2rem 0;
+  }
+  main .aboutContent .funFactsArticle .funFactsElt div img {
+    width: 100%;
   }
   main .projectsFlex {
     flex-direction: column;
@@ -1365,9 +1401,11 @@ footer .contactFooter a:hover {
   }
   main .funFactsArticle .funFactsElt {
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   main .funFactsArticle .funFactsElt div {
-    width: 50%;
+    margin: 3rem 0;
+    width: 35%;
   }
   main .projectsFlex {
     flex-direction: column;
@@ -1590,11 +1628,11 @@ footer .contactFooter a:hover {
     top: -35px;
     left: -45px;
   }
-  main .funFactsArticle .funFactsElt {
-    flex-wrap: wrap;
+  main .funFactsArticle .funFactsArticle .funFactsElt {
+    justify-content: space-between;
   }
-  main .funFactsArticle .funFactsElt div {
-    width: 50%;
+  main .funFactsArticle .funFactsArticle .funFactsElt div {
+    width: 35%;
   }
   main .projectsFlex {
     justify-content: space-between;

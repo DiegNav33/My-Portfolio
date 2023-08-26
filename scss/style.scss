@@ -162,10 +162,10 @@ main {
 
     .aboutContent{
         article{
-            padding: 3rem 0;
+            padding: 5rem 0;
             text-align: center;
             .aboutContentText{
-                padding-top: 5rem;
+                padding: 5rem 0;
 
                 p{
                     font-size: 2rem;
@@ -185,23 +185,35 @@ main {
         .aboutContentFlex{
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: end;
 
             div{
-                padding-top: 5rem;
-                i{
-                    font-size: 5rem;
-                    color: var(--colorRed);
+                width: 20%;
+                // padding-top: 5rem;
+
+                img{
+                    width: 100%;
                 }
+                 i{
+                    font-size: 3rem;
+                     color: #5941A9;
+                 }
 
                 p{
                     margin: 0;
                     margin-top: 2rem;
                 }
             }
-            .arrow{
-                i{
-                    font-size: 3rem;
+        }
+
+        .funFactsElt{
+            padding: 5rem 0;
+
+            div{
+                width: 25%;
+
+                img{
+                    width: 60%;
                 }
             }
         }
@@ -256,10 +268,24 @@ main {
         }
 
         .mockupProject{
+            .articleLeft{
+                transform: translateX(-10%);
+                opacity: 0;
+                transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+            }
+            .articleRight{
+                overflow: hidden;
+                transform: translateX(10%);
+                opacity: 0;
+                transition: 0.6s ease-in-out, opacity 0.6s ease-in-out;
+            }
 
+            .activeTranslateArticle{
+                transform: translateX(0%);
+                opacity: 1;
+            }
             article{
                 background-color: #fafafa;
-                // background: linear-gradient(71deg, #080509, #1a171c, #080509);
                 box-shadow: 0px 0px 16px 8px rgba(0,0,0,0.1);
                 margin: 10rem 0;
                 padding: 3rem;
@@ -582,7 +608,7 @@ main {
                     transition: background-color .5s ease;
 
                     &:hover{
-                        background-color: #0056b3;
+                        background-color: #5941A9;
                     }
                 }
             }

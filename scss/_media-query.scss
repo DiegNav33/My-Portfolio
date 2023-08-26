@@ -69,21 +69,37 @@
                 margin-top: 6rem;
                 padding: 0;
                 flex-direction: column;
+                align-items: center;
 
                 div{
                     padding: 0;
+                    width: 30%;
                 }
 
-                .arrow{
+                i{
                     padding: 3rem 0;
                     transform: rotate(0.25turn);
                 }
             }
 
             .funFactsArticle{
-                div{
-                    padding: 2rem 0;
+
+                .funFactsElt{
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items:end ;
+                    div{
+                        width: 35%;
+                        padding: 2rem 0;
+    
+                        img{
+                            width: 100%;
+                        }
+                    }
                 }
+                
+
             }
         }
         /*PROJECTS*/
@@ -391,8 +407,10 @@
         .funFactsArticle{
             .funFactsElt{
                 flex-wrap: wrap;
+                justify-content: space-around;
                 div{
-                    width: 50%;
+                    margin: 3rem 0;
+                    width: 35%;
                 }
             }
         }   
@@ -680,12 +698,15 @@
             }
         }
         .funFactsArticle{
-            .funFactsElt{
-                flex-wrap: wrap;
-                div{
-                    width: 50%;
+            .funFactsArticle{
+                .funFactsElt{
+                    justify-content: space-between;
+                    div{
+                        // margin: 3rem 0;
+                        width: 35%;
+                    }
                 }
-            }
+            }   
         }
         /*PROJECTS*/
         .projectsFlex{
