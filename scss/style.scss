@@ -133,7 +133,7 @@ main {
     .aboutFlex {
         display: flex;
         padding: 10rem 0; 
-        align-items: center; // A VOIR SI ENLEVER OU PAS, FAIRE TEST !!!!!!!
+        align-items: center;
 
         .aboutGeneralLeft {
             width: 60%;
@@ -222,7 +222,7 @@ main {
     /*PROJECTS*/
     .projectsFlex {
         display: flex;
-        align-items:center; // A VOIR SI ENLEVER OU PAS, FAIRE TEST !!!!!!!
+        align-items:center;
         padding: 10rem 0; 
 
         .projectsGeneralLeft {
@@ -247,11 +247,6 @@ main {
                 width: 100%;
                 filter: brightness(85%);
             }
-
-            // img {
-            //     display: block;
-            //     width: 100%;
-            // }
         }
     }
 
@@ -277,7 +272,7 @@ main {
                 overflow: hidden;
                 transform: translateX(10%);
                 opacity: 0;
-                transition: 0.6s ease-in-out, opacity 0.6s ease-in-out;
+                transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
             }
 
             .activeTranslateArticle{
@@ -301,7 +296,7 @@ main {
                     img{
                         width: 100%;
                         display: block;
-                        cursor: pointer;
+                        // cursor: pointer;
                     }
                 }
                 .textMockupProject{
@@ -350,7 +345,7 @@ main {
 
     .mediaFLex {
         display: flex;
-        align-items: center; // A VOIR SI ENLEVER OU PAS, FAIRE TEST !!!!!!!
+        align-items: center;
         padding: 10rem 0;
 
         .mediaGeneralLeft {
@@ -416,9 +411,9 @@ main {
                 max-height: 500px;
                 padding: 0;
 
-                &:hover{
-                    cursor: pointer;
-                }
+                // &:hover{
+                //     cursor: pointer;
+                // }
 
                 &.image{
                     background-position: center;
@@ -618,7 +613,7 @@ main {
     /*CONTACT*/
     .contactFlex {
         display: flex;
-        align-items: center; // A VOIR SI ENLEVER OU PAS, FAIRE TEST !!!!!!!
+        align-items: center;
         padding: 10rem 0;
 
         .contactGeneralLeft {
@@ -626,7 +621,7 @@ main {
         }
 
         .contactGeneralRight {
-            position: relative;
+            // position: relative;
             width: 40%;
 
             .radiusImg{

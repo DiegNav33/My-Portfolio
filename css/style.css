@@ -629,7 +629,7 @@ main .projectsContent .mockupProject .articleRight {
   overflow: hidden;
   transform: translateX(10%);
   opacity: 0;
-  transition: 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
 }
 main .projectsContent .mockupProject .activeTranslateArticle {
   transform: translateX(0%);
@@ -652,7 +652,6 @@ main .projectsContent .mockupProject article .imageMockupProject {
 main .projectsContent .mockupProject article .imageMockupProject img {
   width: 100%;
   display: block;
-  cursor: pointer;
 }
 main .projectsContent .mockupProject article .textMockupProject {
   width: 50%;
@@ -742,9 +741,6 @@ main .mediaContent .grid article {
   height: 500px;
   max-height: 500px;
   padding: 0;
-}
-main .mediaContent .grid article:hover {
-  cursor: pointer;
 }
 main .mediaContent .grid article.image {
   background-position: center;
@@ -923,7 +919,6 @@ main .contactFlex .contactGeneralLeft {
   width: 60%;
 }
 main .contactFlex .contactGeneralRight {
-  position: relative;
   width: 40%;
 }
 main .contactFlex .contactGeneralRight .radiusImg {

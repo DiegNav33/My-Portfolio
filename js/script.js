@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const {scrollTop, clientHeight} = this.document.documentElement; // destructuring -> creation deux const a partir de proprieté utile. a partir des proprieté de l' objet document.documentElement, maintenant acces a scrollTop (scroll depuis le top) et client height(hauteur de la partie visible de ma fenetre)
 
         for (let articleLeft of articlesFromLeft) {
-            const topEltToTopViewport = articleLeft.getBoundingClientRect().top
+            const topEltToTopViewport = articleLeft.getBoundingClientRect().top // retourne l'objet DOMRect avec les propriétés :top,bottom,left,right,x,y --> sa retourne la taille et  position de l'element relatif au viewport.
 
             if(scrollTop > (scrollTop + topEltToTopViewport).toFixed() - clientHeight * 0.80) {
                 articleLeft.classList.add("activeTranslateArticle");
