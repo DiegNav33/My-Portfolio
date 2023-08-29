@@ -3,14 +3,17 @@ body {
     font-size: 1.6rem;
     line-height: var(--lineHeight);
     color: #333;
+    font-family: 'Montserrat', sans-serif;
 
     h1 {
+        font-family:'Times New Roman', Times, serif;
         font-size: 8rem;
         margin-top: 0;
         margin-bottom: 0;
     }
 
     h2 {
+        font-family: 'Cardo', serif;
         font-size: 2.8rem;
         color: rgb(155, 154, 154);
         word-spacing: .5rem;
@@ -18,6 +21,7 @@ body {
     }
 
     h3{
+        font-family: 'Cardo', serif;
         font-size: 2.4rem;
         border-bottom: 3px solid var(--colorRed);
         display: inline-block;
@@ -28,6 +32,7 @@ body {
     }
 
     h4{
+        font-family: 'Cardo', serif;
         font-size: 2rem;
         font-style: italic;
         word-spacing: .5rem;

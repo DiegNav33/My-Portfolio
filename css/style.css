@@ -358,19 +358,23 @@ body {
   font-size: 1.6rem;
   line-height: var(--lineHeight);
   color: #333;
+  font-family: "Montserrat", sans-serif;
 }
 body h1 {
+  font-family: "Times New Roman", Times, serif;
   font-size: 8rem;
   margin-top: 0;
   margin-bottom: 0;
 }
 body h2 {
+  font-family: "Cardo", serif;
   font-size: 2.8rem;
   color: rgb(155, 154, 154);
   word-spacing: 0.5rem;
   margin: 0;
 }
 body h3 {
+  font-family: "Cardo", serif;
   font-size: 2.4rem;
   border-bottom: 3px solid var(--colorRed);
   display: inline-block;
@@ -380,6 +384,7 @@ body h3 {
   margin: 0;
 }
 body h4 {
+  font-family: "Cardo", serif;
   font-size: 2rem;
   font-style: italic;
   word-spacing: 0.5rem;
@@ -546,6 +551,7 @@ main .aboutContent article .aboutContentText {
   padding: 5rem 0;
 }
 main .aboutContent article .aboutContentText p {
+  text-align: left;
   font-size: 2rem;
 }
 main .aboutContent h4 {
@@ -616,6 +622,7 @@ main .projectsContent article {
   text-align: center;
 }
 main .projectsContent article p {
+  text-align: left;
   margin: 0;
   padding: 5rem 0;
   font-size: 2rem;
@@ -719,6 +726,7 @@ main .mediaContent article .mediaContentText {
   padding-top: 5rem;
 }
 main .mediaContent article .mediaContentText p {
+  text-align: left;
   font-size: 2rem;
 }
 main .mediaContent .mediaArticle a {
@@ -853,11 +861,142 @@ main .blogContent article {
   text-align: center;
   margin: 5rem 0;
 }
-main .blogContent article p {
+main .blogContent article .blogQuote {
+  text-align: center;
   padding: 2rem 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-style: oblique;
   font-weight: bold;
+}
+main .blogContent article p {
+  text-align: left;
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+main .blogContent .imgBlogArticle {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 550px;
+  border: 10px solid #FAFAFA;
+  box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.65);
+  border-radius: 0.5rem;
+}
+main .blogContent .imgBlogArticle .title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  font-family: arial, sans-serif;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: 0;
+}
+main .blogContent .imgBlogArticle .title:hover {
+  opacity: 1;
+  border-radius: 0.5rem;
+  -webkit-backdrop-filter: blur(2px) brightness(80%);
+          backdrop-filter: blur(2px) brightness(80%);
+}
+main .blogContent .backgroundBlog {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .blogContent .indo1 {
+  background-image: url("../images/blog/blog-articles/indonesia/jakarta.jpg");
+}
+main .blogContent .indo2 {
+  background-image: url("../images/blog/blog-articles/indonesia/bali.jpg");
+}
+main .blogContent .indo3 {
+  background-image: url("../images/blog/blog-articles/indonesia/borobodur.jpg");
+}
+main .blogContent .indo4 {
+  background-image: url("../images/blog/blog-articles/indonesia/ubud.jpg");
+}
+main .blogContent .indo5 {
+  background-image: url("../images/blog/blog-articles/indonesia/komodo.jpg");
+}
+main .blogContent .indo6 {
+  background-image: url("../images/blog/blog-articles/indonesia/raja-ampat.jpg");
+}
+main .blogContent .iran1 {
+  background-image: url("../images/blog/blog-articles/iran/tehran.jpg");
+}
+main .blogContent .iran2 {
+  background-image: url("../images/blog/blog-articles/iran/isfahan.jpg");
+}
+main .blogContent .iran3 {
+  background-image: url("../images/blog/blog-articles/iran/persepolis.jpg");
+}
+main .blogContent .iran4 {
+  background-image: url("../images/blog/blog-articles/iran/yazd.jpg");
+}
+main .blogContent .iran5 {
+  background-image: url("../images/blog/blog-articles/iran/food-iran.jpg");
+}
+main .blogContent .mexico1 {
+  background-image: url("../images/blog/blog-articles/mexico/cancun.jpg");
+}
+main .blogContent .mexico2 {
+  background-image: url("../images/blog/blog-articles/mexico/chichen.jpg");
+}
+main .blogContent .mexico3 {
+  background-image: url("../images/blog/blog-articles/mexico/merida.jpg");
+}
+main .blogContent .mexico4 {
+  background-image: url("../images/blog/blog-articles/mexico/calakmul.jpg");
+}
+main .blogContent .mexico5 {
+  background-image: url("../images/blog/blog-articles/mexico/tulum.jpg");
+}
+main .blogContent .thai1 {
+  background-image: url("../images/blog/blog-articles/thailand/bangkok.jpg");
+}
+main .blogContent .thai2 {
+  background-image: url("../images/blog/blog-articles/thailand/chiang-mai.jpg");
+}
+main .blogContent .thai3 {
+  background-image: url("../images/blog/blog-articles/thailand/phiphi.jpg");
+}
+main .blogContent .thai4 {
+  background-image: url("../images/blog/blog-articles/thailand/food.jpg");
+}
+main .blogContent .jap1 {
+  background-image: url("../images/blog/blog-articles/japan/tokyo.jpg");
+}
+main .blogContent .jap2 {
+  background-image: url("../images/blog/blog-articles/japan/kyoto.jpg");
+}
+main .blogContent .jap3 {
+  background-image: url("../images/blog/blog-articles/japan/hiroshima.jpg");
+}
+main .blogContent .jap4 {
+  background-image: url("../images/blog/blog-articles/japan/nara.jpg");
+}
+main .blogContent .jap5 {
+  background-image: url("../images/blog/blog-articles/japan/food.jpg");
+}
+main .blogContent .jap6 {
+  background-image: url("../images/blog/blog-articles/japan/onsen.jpg");
+}
+main .blogContent .tene1 {
+  background-image: url("../images/blog/blog-articles/tenerife/landscape.jpg");
+}
+main .blogContent .tene2 {
+  background-image: url("../images/blog/blog-articles/tenerife/cullture.jpg");
+}
+main .blogContent .tene3 {
+  background-image: url("../images/blog/blog-articles/tenerife/food.jpg");
+}
+main .blogContent .tene4 {
+  background-image: url("../images/blog/blog-articles/tenerife/outdoor.jpg");
 }
 main .blogArticlesGeneral .blogArticles {
   display: flex;
@@ -1265,6 +1404,9 @@ footer .contactFooter a:hover {
     font-size: 2rem;
     padding: 1rem 0;
   }
+  main .blogContent .imgBlogArticle {
+    height: 200px;
+  }
   main .blogArticlesGeneral .blogArticles {
     flex-direction: column;
   }
@@ -1507,6 +1649,9 @@ footer .contactFooter a:hover {
     top: 0;
     left: -45px;
   }
+  main .blogContent .imgBlogArticle {
+    height: 400px;
+  }
   main .blogArticlesGeneral .blogArticles {
     flex-direction: column;
   }
@@ -1725,6 +1870,9 @@ footer .contactFooter a:hover {
     top: 0;
     left: -70px;
   }
+  main .blogContent .imgBlogArticle {
+    height: 480px;
+  }
   main .blogArticlesGeneral .blogArticles {
     flex-direction: column;
   }
@@ -1874,6 +2022,9 @@ footer .contactFooter a:hover {
     width: 150%;
     top: 0;
     left: -70px;
+  }
+  main .blogContent .imgBlogArticle {
+    height: 500px;
   }
   main .contactFlex {
     justify-content: space-between;

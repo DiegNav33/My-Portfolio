@@ -240,6 +240,10 @@
                     padding: 1rem 0;
                 }
             }
+
+            .imgBlogArticle{
+                height: 200px;
+            }
         }
         .blogArticlesGeneral{
             .blogArticles{
@@ -555,6 +559,11 @@
                 }
             }
         }
+        .blogContent{
+            .imgBlogArticle{
+                height: 400px;
+            }
+        }
         .blogArticlesGeneral{
             .blogArticles{
                 flex-direction: column;
@@ -834,6 +843,11 @@
                 }
             }
         }
+        .blogContent{
+            .imgBlogArticle{
+                height: 480px;
+            }
+        }
         .blogArticlesGeneral{
             .blogArticles{
                 flex-direction: column;
@@ -1023,6 +1037,11 @@
                         left: -70px;
                     }
                 }
+            }
+        }
+        .blogContent{
+            .imgBlogArticle{
+                height: 500px;
             }
         }
         /*CONTACT*/
