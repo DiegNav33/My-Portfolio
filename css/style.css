@@ -744,65 +744,9 @@ main .mediaContent .grid {
   margin: 5rem 0;
 }
 main .mediaContent .grid article {
+  cursor: pointer;
   position: relative;
-  width: 100%;
-  height: 500px;
-  max-height: 500px;
   padding: 0;
-}
-main .mediaContent .grid article.image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-main .mediaContent .grid article.img1 {
-  background-image: url("../images/grid/IMG_9966.jpg");
-}
-main .mediaContent .grid article.img2 {
-  background-image: url("../images/grid/IMG_3846.jpg");
-}
-main .mediaContent .grid article.img3 {
-  background-image: url("../images/grid/IMG_1010.jpg");
-}
-main .mediaContent .grid article.img4 {
-  background-image: url("../images/grid/IMG_2044.jpg");
-}
-main .mediaContent .grid article.img5 {
-  background-image: url("../images/grid/IMG_8299.jpg");
-}
-main .mediaContent .grid article.img6 {
-  background-image: url("../images/grid/IMG_9984.jpg");
-}
-main .mediaContent .grid article.img7 {
-  background-image: url("../images/grid/IMG_8457.jpg");
-}
-main .mediaContent .grid article.img8 {
-  background-image: url("../images/grid/IMG_5868.jpg");
-}
-main .mediaContent .grid article.img9 {
-  background-image: url("../images/grid/IMG_9414.jpg");
-}
-main .mediaContent .grid article.img10 {
-  background-image: url("../images/grid/IMG_3707.jpg");
-}
-main .mediaContent .grid article.img11 {
-  background-image: url("../images/grid/IMG_1103_jpg.jpg");
-}
-main .mediaContent .grid article.img12 {
-  background-image: url("../images/grid/IMG_4153.jpg");
-}
-main .mediaContent .grid article.img13 {
-  background-image: url("../images/grid/IMG_8029.jpg");
-}
-main .mediaContent .grid article.img14 {
-  background-image: url("../images/grid/IMG_3749.jpg");
-}
-main .mediaContent .grid article.img15 {
-  background-image: url("../images/grid/IMG_7825_jpg.jpg");
-}
-main .mediaContent .grid article.img16 {
-  background-image: url("../images/grid/tehran-iran-media.jpg");
-  display: none;
 }
 main .mediaContent .grid article .title {
   position: absolute;
@@ -817,12 +761,18 @@ main .mediaContent .grid article .title {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  z-index: 0;
 }
 main .mediaContent .grid article .title:hover {
   opacity: 1;
   -webkit-backdrop-filter: blur(2px) brightness(80%);
           backdrop-filter: blur(2px) brightness(80%);
+}
+main .mediaContent .grid article img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .blogFlex {
   display: flex;
@@ -876,8 +826,8 @@ main .blogContent article p {
 main .blogContent .imgBlogArticle {
   position: relative;
   margin: 0 auto;
-  width: 100%;
-  height: 550px;
+  width: 90%;
+  height: 500px;
   border: 10px solid #FAFAFA;
   box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.65);
   border-radius: 0.5rem;
@@ -903,100 +853,12 @@ main .blogContent .imgBlogArticle .title:hover {
   -webkit-backdrop-filter: blur(2px) brightness(80%);
           backdrop-filter: blur(2px) brightness(80%);
 }
-main .blogContent .backgroundBlog {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-main .blogContent .indo1 {
-  background-image: url("../images/blog/blog-articles/indonesia/jakarta.jpg");
-}
-main .blogContent .indo2 {
-  background-image: url("../images/blog/blog-articles/indonesia/bali.jpg");
-}
-main .blogContent .indo3 {
-  background-image: url("../images/blog/blog-articles/indonesia/borobodur.jpg");
-}
-main .blogContent .indo4 {
-  background-image: url("../images/blog/blog-articles/indonesia/ubud.jpg");
-}
-main .blogContent .indo5 {
-  background-image: url("../images/blog/blog-articles/indonesia/komodo.jpg");
-}
-main .blogContent .indo6 {
-  background-image: url("../images/blog/blog-articles/indonesia/raja-ampat.jpg");
-}
-main .blogContent .iran1 {
-  background-image: url("../images/blog/blog-articles/iran/tehran.jpg");
-}
-main .blogContent .iran2 {
-  background-image: url("../images/blog/blog-articles/iran/isfahan.jpg");
-}
-main .blogContent .iran3 {
-  background-image: url("../images/blog/blog-articles/iran/persepolis.jpg");
-}
-main .blogContent .iran4 {
-  background-image: url("../images/blog/blog-articles/iran/yazd.jpg");
-}
-main .blogContent .iran5 {
-  background-image: url("../images/blog/blog-articles/iran/food-iran.jpg");
-}
-main .blogContent .mexico1 {
-  background-image: url("../images/blog/blog-articles/mexico/cancun.jpg");
-}
-main .blogContent .mexico2 {
-  background-image: url("../images/blog/blog-articles/mexico/chichen.jpg");
-}
-main .blogContent .mexico3 {
-  background-image: url("../images/blog/blog-articles/mexico/merida.jpg");
-}
-main .blogContent .mexico4 {
-  background-image: url("../images/blog/blog-articles/mexico/calakmul.jpg");
-}
-main .blogContent .mexico5 {
-  background-image: url("../images/blog/blog-articles/mexico/tulum.jpg");
-}
-main .blogContent .thai1 {
-  background-image: url("../images/blog/blog-articles/thailand/bangkok.jpg");
-}
-main .blogContent .thai2 {
-  background-image: url("../images/blog/blog-articles/thailand/chiang-mai.jpg");
-}
-main .blogContent .thai3 {
-  background-image: url("../images/blog/blog-articles/thailand/phiphi.jpg");
-}
-main .blogContent .thai4 {
-  background-image: url("../images/blog/blog-articles/thailand/food.jpg");
-}
-main .blogContent .jap1 {
-  background-image: url("../images/blog/blog-articles/japan/tokyo.jpg");
-}
-main .blogContent .jap2 {
-  background-image: url("../images/blog/blog-articles/japan/kyoto.jpg");
-}
-main .blogContent .jap3 {
-  background-image: url("../images/blog/blog-articles/japan/hiroshima.jpg");
-}
-main .blogContent .jap4 {
-  background-image: url("../images/blog/blog-articles/japan/nara.jpg");
-}
-main .blogContent .jap5 {
-  background-image: url("../images/blog/blog-articles/japan/food.jpg");
-}
-main .blogContent .jap6 {
-  background-image: url("../images/blog/blog-articles/japan/onsen.jpg");
-}
-main .blogContent .tene1 {
-  background-image: url("../images/blog/blog-articles/tenerife/landscape.jpg");
-}
-main .blogContent .tene2 {
-  background-image: url("../images/blog/blog-articles/tenerife/cullture.jpg");
-}
-main .blogContent .tene3 {
-  background-image: url("../images/blog/blog-articles/tenerife/food.jpg");
-}
-main .blogContent .tene4 {
-  background-image: url("../images/blog/blog-articles/tenerife/outdoor.jpg");
+main .blogContent .imgBlogArticle img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .blogArticlesGeneral .blogArticles {
   display: flex;
@@ -2077,6 +1939,10 @@ footer .contactFooter a:hover {
   main .projectsContent .mockupProject article:nth-child(1) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(3) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(5) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul li {
     width: 40%;
     margin: 1rem 2rem;
+  }
+  main .blogContent .imgBlogArticle {
+    width: 80%;
+    height: 600px;
   }
 }
 @media screen and (min-height: 930px) {
