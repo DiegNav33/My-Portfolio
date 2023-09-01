@@ -4,16 +4,90 @@
         margin: 0 auto;
     }
     header{
-        position: relative;
-        nav.dFlex{
-            flex-direction: column;
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
             ul{
+                position: fixed;
+                left: -100%;
+                top:0;
                 align-items: center;
                 flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                height: 100vh;
+                transition: .8s;
+                // text-align: center;
 
                 li{
-                    padding: 1rem;
+                    text-align: center;
+                    padding: 1rem 0;
+                    width: 100%;
+                }
+            }
+
+            #icons{
+                font-size: 3rem;
+                display: block;
+                z-index: 1;
+
+                &::before{
+                    top: 0;
+                    content: "\2630";
+                }
+            }
+        }
+
+        .burger{
+            #icons{
+                position:fixed;
+                right:5%;
+                &::before{
+                    content: "\2715";
+                }
+            }
+
+            ul{
+                position: fixed;
+                justify-content: center;
+                height: 100vh;
+                background-color: #fafafa;
+                top: 0%;
+                left: 0;
+            }
+        }
+    }
+
+    .homeHeaderBlack{
+
+        .active{
+
+            border-bottom: 2px solid var(--colorRed);
+
+            &:hover{
+
+            }
+        }
+
+        li{
+            a{
+                color: #333;
+            }
+            
+        }
+        #icons{
+
+            &::before{
+                color: #fff;
+            }
+        }
+
+        .burger{
+            #icons{
+                &::before{
+                    color: #333;
                 }
             }
         }
@@ -352,7 +426,7 @@
        margin: 0 auto;
    }
     header{
-        nav.dFlex{
+        nav{
             flex-direction: column;
 
             ul{

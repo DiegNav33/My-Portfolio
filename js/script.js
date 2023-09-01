@@ -51,4 +51,11 @@ document.addEventListener("DOMContentLoaded", function() {
     
     window.addEventListener("scroll", translateProjectsArticle);
     // END TRANSLATE ON PROJECTS PAGE
+
+    let iconsElt = document.getElementById("icons");
+    let navBarElt = document.querySelector("nav");
+    iconsElt.addEventListener("click",function(){
+        
+        navBarElt.classList.toggle("burger");   
+    })
 });

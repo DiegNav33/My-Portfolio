@@ -6,16 +6,16 @@
 @import "body";
 @import "d-flex";
 @import "container";
-
   /*HEADER*/
 header {
     padding: 1rem 0;
-     position: sticky;
-     top:0px;
-     z-index: 10;
-     transition: .5s;
+    position: sticky;
+    top:0px;
+    z-index: 5;
+    transition: .5s;
 
-    .dFlex {
+    nav {
+        display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
@@ -37,7 +37,10 @@ header {
             }
         }
 
-       
+        #icons{
+            cursor: pointer;
+            display: none;
+        }
     }
 
 }
@@ -113,17 +116,14 @@ header {
 
 main {
     position: relative;
-    
     /*GENERAL*/
     /*INDEX*/
-    video {
-        position:absolute;
+    #div{
+        position: absolute;
         right: 0;
         bottom: 0;
-        // min-width: 100%;
-        // min-height: 100%;
-        // width: 100%;
         z-index: -1;
+
     }
     .homeFlex {
         text-align: center;
