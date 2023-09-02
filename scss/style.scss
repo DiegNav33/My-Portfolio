@@ -118,17 +118,40 @@ main {
     position: relative;
     /*GENERAL*/
     /*INDEX*/
+
     #div{
         position: absolute;
         right: 0;
         bottom: 0;
+        height: 100%;
+        width: 100%;
         z-index: -1;
-
+    
     }
+   
     .homeFlex {
         text-align: center;
-        padding: 25rem 0;
+        padding: 15rem 0;
+        h1{
+            font-size: 7rem;
+        }
+        h2{
+            margin-top: 2rem;
+        }
+        p{
+            margin-top: 15rem;
+            a{
+                margin: 0;
+                color: #fff;
+                // border: 3px solid #7E0100;
+                // background: rgb(126,1,0);
+                background: linear-gradient(82deg, rgba(126,1,0,0.7357536764705883) 30%, rgba(89,65,169,0.7413559173669468) 100%);
+                padding: 3rem;
+                border-radius: 4rem;
+            }
+        }
     }
+ 
     /*ABOUT*/
     .aboutFlex {
         display: flex;
@@ -441,6 +464,11 @@ main {
                     height: 100%;
                     object-fit: cover;
                 }
+            }
+
+            article:nth-child(16){
+
+                display: none;
             }
         }
     }

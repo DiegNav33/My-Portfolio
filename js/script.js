@@ -1,32 +1,32 @@
 document.addEventListener("DOMContentLoaded", function() {
     // START CHANGE HEADER ALL PAGES
-    function swipeHeader() {
+        function swipeHeader() {
         const headerElt = document.querySelector("header");
         const headerLogoElt = document.querySelector("header img");
-        if (window.scrollY >= 100) {
+            if (window.scrollY >= 100) {
 
-            headerElt.classList.remove("homeHeaderWhite");
-            headerElt.classList.add("homeHeaderBlack");
-            headerLogoElt.src="/images/Diego-logo-black-header.png";
-            headerLogoElt.style.width="50px";
-            
-        }
+                headerElt.classList.remove("homeHeaderWhite");
+                headerElt.classList.add("homeHeaderBlack");
+                headerLogoElt.src="/images/Diego-logo-black-header.png";
+                headerLogoElt.style.width="50px";
+                
+            }
 
-        else if (window.scrollY <= 70) {
+            else if (window.scrollY <= 70) {
 
-            headerElt.classList.remove("homeHeaderBlack");
-            headerElt.classList.add("homeHeaderWhite");
-            headerLogoElt.src="/images/diego-logo-white-header.png";
-            headerLogoElt.style.width="80px";
-            
-        }
-    };
-
-    document.addEventListener("scroll", swipeHeader);
+                headerElt.classList.remove("homeHeaderBlack");
+                headerElt.classList.add("homeHeaderWhite");
+                headerLogoElt.src="/images/diego-logo-white-header.png";
+                headerLogoElt.style.width="80px";
+                
+            }
+        };
+ 
+        document.addEventListener("scroll", swipeHeader);
     //END CHANGE HEADER ALL PAGES
 
     // START TRANSLATE ON PROJECTS PAGE
-    function translateProjectsArticle(){
+        function translateProjectsArticle(){
         let articlesFromLeft = document.querySelectorAll(".articleLeft");
         let articlesFromRight = document.querySelectorAll(".articleRight");
 
@@ -47,15 +47,27 @@ document.addEventListener("DOMContentLoaded", function() {
                 articleRight.classList.add("activeTranslateArticle");
             }
         };
-    };
+        };
     
-    window.addEventListener("scroll", translateProjectsArticle);
+        window.addEventListener("scroll", translateProjectsArticle);
     // END TRANSLATE ON PROJECTS PAGE
+    // START MEDIA QUERY TRANSLATE ON PROJECTS PAGE
+        const mediaQuery = window.matchMedia("(max-width: 900px)");
 
-    let iconsElt = document.getElementById("icons");
-    let navBarElt = document.querySelector("nav");
-    iconsElt.addEventListener("click",function(){
-        
-        navBarElt.classList.toggle("burger");   
-    })
+        if(mediaQuery.matches) {
+
+            window.addEventListener("scroll", translateProjectsArticle);
+
+        }
+    // END MEDIA QUERY TRANSLATE ON PROJECTS PAGE
+
+    //START BURGER MENU
+        let iconsElt = document.getElementById("icons");
+        let navBarElt = document.querySelector("nav");
+        let bodyElt = document.querySelector("body");
+        iconsElt.addEventListener("click",function(){
+            navBarElt.classList.toggle("burger");
+            bodyElt.style.overflow = bodyElt.style.overflow === "hidden" ? "auto" : "hidden"; // si overflow = hidden alors passe en auto sinon hidden
+        });
+    // END BURGER MENU
 });
