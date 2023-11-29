@@ -652,15 +652,29 @@ main .projectsContent article p {
   font-size: 2rem;
 }
 main .projectsContent .mockupProject .articleLeft {
+  position: relative;
   transform: translateX(-10%);
   opacity: 0;
   transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
 }
+main .projectsContent .mockupProject .articleLeft a {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
 main .projectsContent .mockupProject .articleRight {
+  position: relative;
   overflow: hidden;
   transform: translateX(10%);
   opacity: 0;
   transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+main .projectsContent .mockupProject .articleRight a {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
 }
 main .projectsContent .mockupProject .activeTranslateArticle {
   transform: translateX(0%);
@@ -714,7 +728,7 @@ main .projectsContent .mockupProject article span {
   height: auto;
   margin: 0 5rem;
 }
-main .projectsContent .mockupProject article:nth-child(2), main .projectsContent .mockupProject article:nth-child(4), main .projectsContent .mockupProject article:nth-child(6) {
+main .projectsContent .mockupProject article:nth-child(2), main .projectsContent .mockupProject article:nth-child(4), main .projectsContent .mockupProject article:nth-child(6), main .projectsContent .mockupProject article:nth-child(8) {
   flex-direction: row-reverse;
 }
 main .mediaFLex {
@@ -1304,23 +1318,23 @@ footer .contactFooter a:hover {
   main .projectsContent .mockupProject .activeTranslateArticle {
     opacity: 1;
   }
-  main .projectsContent .mockupProject article, main .projectsContent .mockupProject article:nth-child(2), main .projectsContent .mockupProject article:nth-child(4), main .projectsContent .mockupProject article:nth-child(6) {
+  main .projectsContent .mockupProject article, main .projectsContent .mockupProject article:nth-child(2), main .projectsContent .mockupProject article:nth-child(4), main .projectsContent .mockupProject article:nth-child(6), main .projectsContent .mockupProject article:nth-child(8) {
     flex-direction: column;
   }
-  main .projectsContent .mockupProject article .imageMockupProject, main .projectsContent .mockupProject article:nth-child(2) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(4) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(6) .imageMockupProject {
+  main .projectsContent .mockupProject article .imageMockupProject, main .projectsContent .mockupProject article:nth-child(2) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(4) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(6) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(8) .imageMockupProject {
     width: 100%;
   }
-  main .projectsContent .mockupProject article .textMockupProject, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject {
+  main .projectsContent .mockupProject article .textMockupProject, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject, main .projectsContent .mockupProject article:nth-child(8) .textMockupProject {
     width: 100%;
   }
-  main .projectsContent .mockupProject article .textMockupProject p, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject p {
+  main .projectsContent .mockupProject article .textMockupProject p, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(8) .textMockupProject p {
     font-size: 1.6rem;
     padding: 3rem 0;
   }
-  main .projectsContent .mockupProject article .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject ul {
+  main .projectsContent .mockupProject article .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(8) .textMockupProject ul {
     padding: 2rem 0 0 0;
   }
-  main .projectsContent .mockupProject article .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject ul li {
+  main .projectsContent .mockupProject article .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(8) .textMockupProject ul li {
     width: 45%;
     margin: 0.5rem 0.5rem;
     padding: 0.5rem;
@@ -1571,23 +1585,23 @@ footer .contactFooter a:hover {
   main .projectsContent .mockupProject .activeTranslateArticle {
     opacity: 1;
   }
-  main .projectsContent .mockupProject article, main .projectsContent .mockupProject article:nth-child(2), main .projectsContent .mockupProject article:nth-child(4) {
+  main .projectsContent .mockupProject article, main .projectsContent .mockupProject article:nth-child(2), main .projectsContent .mockupProject article:nth-child(4), main .projectsContent .mockupProject article:nth-child(6), main .projectsContent .mockupProject article:nth-child(8) {
     flex-direction: column;
   }
-  main .projectsContent .mockupProject article .imageMockupProject, main .projectsContent .mockupProject article:nth-child(2) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(4) .imageMockupProject {
+  main .projectsContent .mockupProject article .imageMockupProject, main .projectsContent .mockupProject article:nth-child(2) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(4) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(6) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(8) .imageMockupProject {
     width: 100%;
   }
-  main .projectsContent .mockupProject article .textMockupProject, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject {
+  main .projectsContent .mockupProject article .textMockupProject, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject, main .projectsContent .mockupProject article:nth-child(8) .textMockupProject {
     width: 100%;
   }
-  main .projectsContent .mockupProject article .textMockupProject p, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject p {
+  main .projectsContent .mockupProject article .textMockupProject p, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(8) .textMockupProject p {
     font-size: 1.8rem;
     padding: 3rem 0;
   }
-  main .projectsContent .mockupProject article .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul {
+  main .projectsContent .mockupProject article .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(8) .textMockupProject ul {
     padding: 2rem 0 0 0;
   }
-  main .projectsContent .mockupProject article .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul li {
+  main .projectsContent .mockupProject article .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(8) .textMockupProject ul li {
     width: 45%;
     margin: 0.5rem 0.5rem;
     padding: 0.5rem;
@@ -1812,23 +1826,23 @@ footer .contactFooter a:hover {
   main .projectsContent .mockupProject .activeTranslateArticle {
     opacity: 1;
   }
-  main .projectsContent .mockupProject article, main .projectsContent .mockupProject article:nth-child(2), main .projectsContent .mockupProject article:nth-child(4) {
+  main .projectsContent .mockupProject article, main .projectsContent .mockupProject article:nth-child(2), main .projectsContent .mockupProject article:nth-child(4), main .projectsContent .mockupProject article:nth-child(6), main .projectsContent .mockupProject article:nth-child(8) {
     flex-direction: column;
   }
-  main .projectsContent .mockupProject article .imageMockupProject, main .projectsContent .mockupProject article:nth-child(2) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(4) .imageMockupProject {
+  main .projectsContent .mockupProject article .imageMockupProject, main .projectsContent .mockupProject article:nth-child(2) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(4) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(6) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(8) .imageMockupProject {
     width: 100%;
   }
-  main .projectsContent .mockupProject article .textMockupProject, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject {
+  main .projectsContent .mockupProject article .textMockupProject, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject, main .projectsContent .mockupProject article:nth-child(8) .textMockupProject {
     width: 100%;
   }
-  main .projectsContent .mockupProject article .textMockupProject p, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject p {
+  main .projectsContent .mockupProject article .textMockupProject p, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(8) .textMockupProject p {
     font-size: 2rem;
     padding: 3rem 0;
   }
-  main .projectsContent .mockupProject article .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul {
+  main .projectsContent .mockupProject article .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(8) .textMockupProject ul {
     padding: 2rem 0 0 0;
   }
-  main .projectsContent .mockupProject article .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul li {
+  main .projectsContent .mockupProject article .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(8) .textMockupProject ul li {
     width: 45%;
     margin: 0.5rem 0.5rem;
     padding: 0.5rem;
@@ -1968,23 +1982,23 @@ footer .contactFooter a:hover {
     width: 300px;
     height: 300px;
   }
-  main .projectsContent .mockupProject article, main .projectsContent .mockupProject article:nth-child(2), main .projectsContent .mockupProject article:nth-child(4) {
+  main .projectsContent .mockupProject article, main .projectsContent .mockupProject article:nth-child(2), main .projectsContent .mockupProject article:nth-child(4), main .projectsContent .mockupProject article:nth-child(6), main .projectsContent .mockupProject article:nth-child(8) {
     flex-direction: column;
   }
-  main .projectsContent .mockupProject article .imageMockupProject, main .projectsContent .mockupProject article:nth-child(2) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(4) .imageMockupProject {
+  main .projectsContent .mockupProject article .imageMockupProject, main .projectsContent .mockupProject article:nth-child(2) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(4) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(6) .imageMockupProject, main .projectsContent .mockupProject article:nth-child(8) .imageMockupProject {
     width: 100%;
   }
-  main .projectsContent .mockupProject article .textMockupProject, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject {
+  main .projectsContent .mockupProject article .textMockupProject, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject, main .projectsContent .mockupProject article:nth-child(8) .textMockupProject {
     width: 100%;
   }
-  main .projectsContent .mockupProject article .textMockupProject p, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject p {
+  main .projectsContent .mockupProject article .textMockupProject p, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(8) .textMockupProject p {
     font-size: 2rem;
     padding: 3rem 0;
   }
-  main .projectsContent .mockupProject article .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul {
+  main .projectsContent .mockupProject article .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(8) .textMockupProject ul {
     padding: 2rem 0 0 0;
   }
-  main .projectsContent .mockupProject article .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul li {
+  main .projectsContent .mockupProject article .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject ul li, main .projectsContent .mockupProject article:nth-child(8) .textMockupProject ul li {
     width: 30%;
     margin: 1rem 2rem;
   }

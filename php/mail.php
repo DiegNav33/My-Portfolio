@@ -23,21 +23,9 @@
           $message
       ";
   
-      // Email headers
-      $headers = "From: $senderEmail\r\n";
-      $headers .= "Reply-To: $senderEmail\r\n";
-  
       // Send the email
-      $mailReturn = mail($recipientEmail, $subject, $emailTemplate, $headers);
+      $mailReturn = mail($recipientEmail, $subject, $emailTemplate,"");
   
-      // if ($mailReturn) {
-
-      //     echo "The email has been sent successfully.";
-      // } 
-      // else {
-
-      //     echo "Error sending the email. Please try again.";
-      // }
     }
   
   header("Location:../pages/contact.html");
