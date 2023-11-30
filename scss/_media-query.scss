@@ -165,8 +165,12 @@
             }
         }
         .aboutContent{
+
+            article:nth-child(2) {
+                padding: 5rem 0 2rem 0;
+            }
             .aboutContentFlex{
-                margin-top: 6rem;
+                margin-top: 2rem;
                 padding: 0;
                 flex-direction: column;
                 align-items: center;
@@ -237,7 +241,6 @@
         .projectsContent{
 
             .mockupProject{
-
                 .articleLeft{
                     transform: translateX(0%);
                     opacity: 0;
@@ -269,6 +272,7 @@
                         p{
                             font-size: 1.6rem;
                             padding: 3rem 0;
+                            text-align: center;
                         }
 
                         ul{

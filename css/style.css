@@ -347,7 +347,7 @@ template {
 :root {
   scroll-behavior: smooth;
   font-size: 62.5%;
-  --lineHeight: 1.2;
+  --lineHeight: 1.4;
   --colorBody: #FAFAFA;
   --colorWhite: #fff;
   --colorRed: #7E0100;
@@ -568,7 +568,7 @@ main .aboutFlex .aboutGeneralRight img {
   width: 150%;
 }
 main .aboutContent article {
-  padding: 5rem 0;
+  padding: 5rem 0 0 0;
   text-align: center;
 }
 main .aboutContent article .aboutContentText {
@@ -592,6 +592,7 @@ main .aboutContent .aboutContentFlex {
   display: flex;
   justify-content: space-between;
   align-items: end;
+  padding: 5rem 0;
 }
 main .aboutContent .aboutContentFlex div {
   width: 20%;
@@ -1253,8 +1254,11 @@ footer .contactFooter a:hover {
     top: -35px;
     left: -45px;
   }
+  main .aboutContent article:nth-child(2) {
+    padding: 5rem 0 2rem 0;
+  }
   main .aboutContent .aboutContentFlex {
-    margin-top: 6rem;
+    margin-top: 2rem;
     padding: 0;
     flex-direction: column;
     align-items: center;
@@ -1330,6 +1334,7 @@ footer .contactFooter a:hover {
   main .projectsContent .mockupProject article .textMockupProject p, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject p, main .projectsContent .mockupProject article:nth-child(8) .textMockupProject p {
     font-size: 1.6rem;
     padding: 3rem 0;
+    text-align: center;
   }
   main .projectsContent .mockupProject article .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(2) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(4) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(6) .textMockupProject ul, main .projectsContent .mockupProject article:nth-child(8) .textMockupProject ul {
     padding: 2rem 0 0 0;
