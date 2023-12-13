@@ -360,6 +360,9 @@ body {
   line-height: var(--lineHeight);
   color: #333;
   font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 body h1 {
   font-family: "Times New Roman", Times, serif;
@@ -1080,6 +1083,7 @@ main .contactForm fieldset button:hover {
 
 /*FOOTER*/
 footer {
+  margin-top: auto;
   background-color: var(--bgGeneral);
   color: var(--colorWhite);
 }
@@ -2109,6 +2113,19 @@ footer .contactFooter a:hover {
   main .blogContent .imgBlogArticle {
     width: 80%;
     height: 600px;
+  }
+}
+@media screen and (min-width: 1925px) {
+  main .mediaContent .grid article:nth-child(16) {
+    display: none;
+  }
+}
+@media screen and (min-width: 2313px) {
+  main .mediaContent .grid {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+  main .mediaContent .grid article:nth-child(13), main .mediaContent .grid article:nth-child(9), main .mediaContent .grid article:nth-child(14) {
+    display: none;
   }
 }
 @media screen and (min-height: 930px) {

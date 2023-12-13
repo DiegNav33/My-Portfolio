@@ -1309,6 +1309,33 @@
         }
     } 
 }
+@media screen and (min-width:1925px) {
+    main{
+        .mediaContent{
+            .grid{
+                article:nth-child(16){
+
+                    display: none;
+                }
+            }
+        }
+    } 
+}
+@media screen and (min-width:2313px) {
+    main{
+        .mediaContent{
+            .grid{
+                grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+
+                article:nth-child(13), article:nth-child(9), article:nth-child(14){
+
+                    display: none;
+                }
+
+            }
+        }
+    } 
+}
 @media screen and (min-height:930px){
     main{
         .homeFlex {

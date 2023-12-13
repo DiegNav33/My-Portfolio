@@ -4,6 +4,9 @@ body {
     line-height: var(--lineHeight);
     color: #333;
     font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 
     h1 {
         font-family:'Times New Roman', Times, serif;
