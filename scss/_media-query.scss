@@ -130,6 +130,7 @@
                 a{
                     padding: 2rem;
                     border-radius: 4rem;
+                    background: linear-gradient(82deg, rgba(126,1,0,1) 30%, rgba(89,65,169,1) 100%);
                 }
             }
         }
@@ -187,6 +188,13 @@
                 i{
                     padding: 3rem 0;
                     transform: rotate(0.25turn);
+                }
+            }
+
+            .myResume{
+
+                a{
+                    background: linear-gradient(82deg, rgba(126,1,0,1) 30%, rgba(89,65,169,1) 100%);
                 }
             }
 
@@ -276,7 +284,7 @@
                         p{
                             font-size: 1.6rem;
                             padding: 3rem 0;
-                            text-align: center;
+                            text-align: left;
                         }
 
                         ul{
@@ -387,6 +395,10 @@
 
                 .card{
                     width: 100%;
+
+                    a{
+                        background: linear-gradient(82deg, rgba(126,1,0,1) 30%, rgba(89,65,169,1) 100%);
+                    }
                 }
             }
         }
@@ -448,7 +460,8 @@
                 }
 
                 button{
-                    width: 50%;
+                    width: 75%;
+                    background: linear-gradient(82deg, rgba(126,1,0,1) 30%, rgba(89,65,169,1) 100%);
                 }
             }
         }
@@ -514,7 +527,7 @@
             }
         }
    }
-   main{
+    main{
         /*GENERAL*/
         /*INDEX*/
         .homeFlex {
@@ -523,7 +536,13 @@
 
             h1{
             font-size: 5rem;
-            }   
+            }
+            
+            p{
+                a{
+                    background: linear-gradient(82deg, rgba(126,1,0,1) 30%, rgba(89,65,169,1) 100%);
+                }
+            }
         }
         /*ABOUT*/
         .aboutFlex{
@@ -547,6 +566,7 @@
 
             .aboutGeneralRight{
                 margin-top: 3rem;
+
                 .radiusImg{
                     width: 250px;
                     height: 250px;
@@ -559,16 +579,28 @@
                 }
             }
         }
-        .funFactsArticle{
-            .funFactsElt{
-                flex-wrap: wrap;
-                justify-content: space-around;
-                div{
-                    margin: 3rem 0;
-                    width: 35%;
+        
+        .aboutContent {
+            .myResume{
+
+                a{
+                    padding: 2rem 3rem;
+                    background: linear-gradient(82deg, rgba(126,1,0,1) 30%, rgba(89,65,169,1) 100%);
                 }
             }
-        }   
+    
+            .funFactsArticle{
+                .funFactsElt{
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    div{
+                        margin: 3rem 0;
+                        width: 35%;
+                    }
+                }
+            }   
+        }
+        
         /*PROJECTS*/
         .projectsFlex{
             flex-direction: column;
@@ -737,6 +769,11 @@
 
                 .card{
                     width: 100%;
+
+                    a{
+                        width: 25%;
+                        background: linear-gradient(82deg, rgba(126,1,0,1) 30%, rgba(89,65,169,1) 100%);
+                    }
                 }
             }
         }
@@ -800,6 +837,7 @@
 
                 button{
                     width: 50%;
+                    background: linear-gradient(82deg, rgba(126,1,0,1) 30%, rgba(89,65,169,1) 100%);
                 }
             }
         }
@@ -847,6 +885,12 @@
         /*INDEX*/
         .homeFlex{
             padding: 20rem 0;
+
+            p{
+                a{
+                    background: linear-gradient(82deg, rgba(126,1,0,1) 30%, rgba(89,65,169,1) 100%);
+                }
+            }
         }
         /*ABOUT*/
         .aboutFlex{
@@ -877,17 +921,30 @@
                 }
             }
         }
-        .funFactsArticle{
-            .funFactsArticle{
-                .funFactsElt{
-                    justify-content: space-between;
-                    div{
-                        // margin: 3rem 0;
-                        width: 35%;
-                    }
+        .aboutContent{
+
+            .myResume{
+
+                a{
+                    padding: 2.5rem 3.5rem;
+                    color: var(--colorWhite);
+                    background: linear-gradient(82deg, rgba(126,1,0,1) 30%, rgba(89,65,169,1) 100%);
                 }
-            }   
+            }
+
+            .funFactsArticle{
+                .funFactsArticle{
+                    .funFactsElt{
+                        justify-content: space-between;
+                        div{
+                            // margin: 3rem 0;
+                            width: 35%;
+                        }
+                    }
+                }   
+            }
         }
+       
         /*PROJECTS*/
         .projectsFlex{
             justify-content: space-between;
@@ -1042,6 +1099,12 @@
 
                 .card{
                     width: 100%;
+
+                    a{
+                        width: 25%;
+                        //background-color:var(--colorRed);
+                        background: linear-gradient(82deg, rgba(126,1,0,1) 30%, rgba(89,65,169,1) 100%);
+                    }
                 }
             }
         }
@@ -1079,6 +1142,7 @@
             fieldset{
                 button{
                     width: 50%;
+                    background: linear-gradient(82deg, rgba(126,1,0,1) 30%, rgba(89,65,169,1) 100%);
                 }
             }
         }
@@ -1094,6 +1158,7 @@
 }
  @media screen and (min-width:1023px) and (max-width:1250px){
     main{
+        
         /*ABOUT*/
         .aboutFlex{
             justify-content: space-between;

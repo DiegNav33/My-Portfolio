@@ -144,11 +144,15 @@ main {
             a{
                 margin: 0;
                 color: #fff;
-                // border: 3px solid #7E0100;
-                // background: rgb(126,1,0);
                 background: linear-gradient(82deg, rgba(126,1,0,0.7357536764705883) 30%, rgba(89,65,169,0.7413559173669468) 100%);
                 padding: 3rem;
                 border-radius: 4rem;
+                transition: .5s ease-in-out;
+
+                &:hover{
+
+                    background-color: var(--colorRed);
+                } 
             }
         }
     }
@@ -228,6 +232,23 @@ main {
                 p{
                     margin: 0;
                     margin-top: 2rem;
+                }
+            }
+        }
+
+        .myResume{
+
+            a{
+                border-radius: 5rem;
+                border: none;
+                padding: 2rem;
+                color: var(--colorWhite);
+                background: linear-gradient(82deg, rgba(126,1,0,0.9) 30%, rgba(89,65,169,0.9) 100%);
+                transition: .5s ease-in-out;
+
+                &:hover {
+
+                    background-color: var(--colorRed);
                 }
             }
         }
@@ -349,7 +370,7 @@ main {
                         li{
                             font-size: 1.8rem;
                             padding: 1rem 2rem;
-                            border: 1px solid black;
+                            // border: 1px solid black;
                             border-radius: 1.5rem;
                             background-color: #7E0100;
                             color: #fff;
@@ -621,15 +642,16 @@ main {
                 a{
                     display: inline-block;
                     padding: 10px 20px;
-                    background-color:var(--colorRed);
-                    color: #fff;
+                    //background-color:var(--colorRed);
+                    background: linear-gradient(82deg, rgba(126,1,0,0.9) 30%, rgba(89,65,169,0.9) 100%);
+                    color: var(--colorWhite);
                     border: none;
-                    border-radius: 5px;
+                    border-radius: 4rem;
                     text-decoration: none;
                     transition: background-color .5s ease;
 
                     &:hover{
-                        background-color: #5941A9;
+                        background-color: var(--colorRed);
                     }
                 }
             }
@@ -775,18 +797,23 @@ main {
             button {
                 display: block;
                 margin: 2rem auto;
-                padding: 1rem 0;
-                width: 25%;
-                border-radius: .5rem;
-                border: 1px solid black;
-                background-color: #F9B004;
+                padding: 2rem;
+                width: 50%;
+                color: var(--colorWhite);
+                // border-radius: .5rem;
+                border-radius: 4rem;
+                // border: 1px solid black;
+                border: none;
+                // background-color: #F9B004;
+                background: linear-gradient(82deg, rgba(126,1,0,0.9) 30%, rgba(89,65,169,0.9) 100%);
                 cursor: pointer;
                 transition: .5s;
 
                 &:hover {
-                    background-color: #b47f02;
-                    border: 1px solid #7E0100;
-                    color: #fff;
+                    // background-color: #b47f02;
+                    // border: 1px solid #7E0100;
+                    // color: #fff;
+                    background-color: var(--colorRed);
                 }
             }
         }
