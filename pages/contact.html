@@ -28,7 +28,7 @@
     <header class="homeHeaderWhite">
         <div class="container">
             <nav class="dFlex">
-                <a class="anchorLogo" href="../index.html" aria-label="To the home page"><img src="../images/diego-logo-white-header.png" alt="Logo Diego Navarro Digital Solutions"></a>
+                <a class="anchorLogo" href="../index.html" aria-label="To the home page"><img src="../images/header_white.png" alt="Logo Diego Navarro Digital Solutions"></a>
                 <ul>
                     <li><a href="../index.html" aria-label="To the home page">HOME</a></li>
                     <li><a href="about.html" aria-label="To the about page">ABOUT</a></li>
@@ -49,16 +49,14 @@
                         <h1>Contact.</h1>
                         <section class="contact">
                             <h2>Get in touch with me via social media or email.</h2>
-                            <div class="socialMediaContact">
-                                <div>
-                                    <p><a href="https://www.linkedin.com/in/diego-navarro-7b148227b/" target="_blank" aria-label="To the linkedIn profile"><i class="fa-brands fa-linkedin fa-2xl"></i> LinkedIn</a></p>
-                                    <p><a href="https://www.instagram.com/diegnav_travel/" target="_blank" aria-label="To the instagram profile"><i class="fa-brands fa-square-instagram fa-2xl"></i> Instagram</a></p>
-                                </div>
-                                <div>
-                                    <p><a href="https://www.youtube.com/channel/UCGaa6cZbe9ffIzVvazMsiSQ" target="_blank" aria-label="To the youtube profile"><i class="fa-brands fa-square-youtube fa-2xl"></i> Youtube</a></p>
-                                    <p><a href="https://github.com/DiegNav33" target="_blank" aria-label="To the github profile"><i class="fa-brands fa-square-github fa-2xl"></i> GitHub</a></p>
-                                </div>
-                            </div>
+                            <!-- <div class="socialMediaContact">
+                              <div>
+                                <p><a href="https://www.linkedin.com/in/diego-navarro-7b148227b/" target="_blank" aria-label="To the linkedIn profile"><i class="fa-brands fa-linkedin fa-2xl"></i> LinkedIn</a></p>
+                              </div>
+                              <div>
+                                <p><a href="https://github.com/DiegNav33" target="_blank" aria-label="To the github profile"><i class="fa-brands fa-square-github fa-2xl"></i> GitHub</a></p>
+                              </div>
+                            </div> -->
                         </section>
                     </div>
                     <div class="contactGeneralRight">
@@ -70,23 +68,61 @@
             </div>
         </div>
         <div class="container">
-            <section class="contactForm">
-                <form action="../php/mail.php" method="post">
-                    <fieldset>
-                        <legend>Send me an email</legend>
-                        <div class="contactNameEmail">
-                            <p><input type="text" id="name" name="name" placeholder="Name..." required></p>
-                            <p><input type="email" id="email" name="email" placeholder="Email..." required></p>
-                            <p><input type="tel" id="tel" name="tel" placeholder="Phone..."></p>
-                        </div>
-                        <div class="contactMessage">
-                            <p><input type="text" id="subject" name="subject" placeholder="Subject..." required></p>
-                            <p><textarea name="message" id="message" cols="30" rows="5" placeholder="Your message..." required></textarea></p>
-                        </div>
-                        <button type="submit" aria-label="Submit form">SUBMIT</button>
-                    </fieldset>
-                </form>
-            </section>
+          <section class="contactForm">
+            <h3>Inquiry Form</h3>
+            <form action="../php/mail.php" method="post">
+                <fieldset>
+                    <!-- <legend>By form</legend> -->
+                    <div class="contactNameEmail">
+                        <p><input type="text" id="name" name="name" placeholder="Name..." required></p>
+                        <p><input type="email" id="email" name="email" placeholder="Email..." required></p>
+                        <p><input type="tel" id="tel" name="tel" placeholder="Phone..."></p>
+                    </div>
+                    <div class="contactMessage">
+                        <p><input type="text" id="subject" name="subject" placeholder="Subject..." required></p>
+                        <p><textarea name="message" id="message" cols="30" rows="5" placeholder="Your message..." required></textarea></p>
+                    </div>
+                    <button type="submit" aria-label="Submit form">SUBMIT</button>
+                </fieldset>
+            </form>
+          </section>
+          <section class="contactOther">
+            <h3>Reach Out Through</h3>
+            <div class="cardsContainer">
+              <a href="https://www.linkedin.com/in/diego-navarro-7b148227b/" target="_blank">
+                <div class="card">
+                  <div class="card-header">
+                    <img src="../images/skills/linkedin-color.svg" alt="">
+                  </div>
+                  <div class="card-body">
+                    <p class="moreAboutMe">Message me</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="https://wa.me/33699863433?text=Hello,%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank">
+                <div class="card">
+                  <div class="card-header">
+                    <img src="../images/skills/whatsapp-color.svg" alt="">
+                  </div>
+                  <div class="card-body">
+                    <p class="moreAboutMe">WhatsApp me</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="mailto:diegnavpro@gmail.com?subject=Inquiry%20about%20your%20services&body=Hello%20Diego,%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank">
+                <div class="card">
+                  <div class="card-header">
+                    <img src="../images/skills/gmail-color.svg" alt="">
+                  </div>
+                  <div class="card-body">
+                    <p class="moreAboutMe">Direct mail</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </section>
         </div>
     </main>
     <footer>
@@ -95,8 +131,6 @@
                 <div class="socialMedia">
                     <p>Follow me on :</p>
                     <a href="https://www.linkedin.com/in/diego-navarro-7b148227b/" target="_blank" aria-label="To the linkedIn profile"><i class="fa-brands fa-linkedin-in fa-2xl "></i></a>
-                    <a href="https://www.instagram.com/diegnav_travel/" target="_blank" aria-label="To the instagram profile"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-                    <a href="https://www.youtube.com/channel/UCGaa6cZbe9ffIzVvazMsiSQ" target="_blank" aria-label="To the youtube profile"><i class="fa-brands fa-youtube fa-2xl"></i></a>
                     <a href="https://github.com/DiegNav33" target="_blank" aria-label="To the github profile"><i class="fa-brands fa-github fa-2xl "></i></a>
                 </div>
                 <div class="copyright">

@@ -7,21 +7,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 headerElt.classList.remove("homeHeaderWhite");
                 headerElt.classList.add("homeHeaderBlack");
-                headerLogoElt.src="/images/Diego-logo-black-header.png";
+                headerLogoElt.src="/images/header_black.png";
                 headerLogoElt.style.width="50px";
-                
+
             }
 
             else if (window.scrollY <= 70) {
 
                 headerElt.classList.remove("homeHeaderBlack");
                 headerElt.classList.add("homeHeaderWhite");
-                headerLogoElt.src="/images/diego-logo-white-header.png";
+                headerLogoElt.src="/images/header_white.png";
                 headerLogoElt.style.width="80px";
-                
+
             }
         };
- 
+
         document.addEventListener("scroll", swipeHeader);
     //END CHANGE HEADER ALL PAGES
 
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         };
         };
-    
+
         window.addEventListener("scroll", translateProjectsArticle);
     // END TRANSLATE ON PROJECTS PAGE
     // START MEDIA QUERY TRANSLATE ON PROJECTS PAGE

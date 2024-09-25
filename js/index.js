@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded",function(){
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        color: "#7e0100",
+        color: "#5D40AF",
         backgroundColor: "#fafafa",
         points: 15.00,
         maxDistance: 15.00,
