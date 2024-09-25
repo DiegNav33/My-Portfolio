@@ -1387,17 +1387,17 @@
   main{
       .projectsContent{
           .mockupProject{
-              article:nth-child(1), article:nth-child(3), article:nth-child(5), article:nth-child(2), article:nth-child(4) {
+              article {
                   .imageMockupProject{
                       justify-content: center;
                       align-items: center;
                       img{
-                          width: 80%;
+                          width: 70%;
                       }
                   }
                   .textMockupProject{
                       p{
-                          font-size: 2rem;
+                          font-size: 1.6rem;
                           padding: 3rem 0;
                       }
                       ul{
