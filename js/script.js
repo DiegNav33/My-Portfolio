@@ -70,4 +70,63 @@ document.addEventListener("DOMContentLoaded", function() {
             bodyElt.style.overflow = bodyElt.style.overflow === "hidden" ? "auto" : "hidden"; // si overflow = hidden alors passe en auto sinon hidden
         });
     // END BURGER MENU
+
+    // START CONTACT FORM RECAPTCHA
+
+      const form = document.getElementById('contactForm');
+      const formMessage = document.getElementById('formMessage');
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6Lf15mErAAAAAO_PiWlhQRinkuXxWOvZRq3oOy_7', {action: 'submit'}).then(function(token) {
+            let input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'recaptcha_token';
+            input.value = token;
+            form.appendChild(input);
+
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+              method: 'POST',
+              body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+              if (data.status === 'success') {
+                document.getElementById("successModal").style.display = "flex";
+              } else if (data.status === 'captcha') {
+                document.getElementById("errorModal").style.display = "flex";
+              } else {
+                document.getElementById("errorModal").style.display = "flex";
+              }
+              form.reset();
+            })
+            .catch(error => {
+              formMessage.textContent = "Technical error. Please try again.";
+              formMessage.style.color = "#721c24";
+              formMessage.style.backgroundColor = "#f8d7da";
+              formMessage.style.display = "block";
+            });
+          });
+        });
+      });
+
+      document.querySelectorAll('.close-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          btn.closest('.modal').style.display = 'none';
+        });
+      });
+
+      document.querySelectorAll('.modal').forEach(modal => {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            modal.style.display = 'none';
+          }
+        });
+      });
+
+    // END CONTACT FORM RECAPTCHA
 });

@@ -1,35 +1,78 @@
 <?php
 
-  if (!empty($_POST)) {
-    $recipientEmail = "diegnavpro@gmail.com";
-    $subject = $_POST["subject"];
-    $senderName = $_POST["name"];
-    $senderEmail = $_POST["email"];
-    $senderTel = $_POST["tel"];
-    $message = $_POST["message"];
+require __DIR__ . '/../vendor/autoload.php';
 
-    $emailTemplate = "
-        Hello,
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
 
-        Someone has just contacted you. Here are the details:
+header('Content-Type: application/json');
 
-        Name: $senderName
-        Email: $senderEmail
-        Phone: $senderTel
+if (!empty($_POST)) {
 
-        Message:
-        $message
-    ";
-
-    $mailReturn = mail($recipientEmail, $subject, $emailTemplate,"");
-
-    if ($mailReturn) {
-        header("Location: ../pages/contact.html?success=1");
+    // Honeypot
+    if (!empty($_POST['website'])) {
+        echo json_encode(['status' => 'captcha']);
+        exit;
     }
-    else {
-      header("Location: ../pages/contact.html?error=1");
+
+    // reCAPTCHA
+    $recaptchaSecret = $_ENV['RECAPTCHA_SECRET_KEY'];
+    $recaptchaToken = $_POST['recaptcha_token'];
+
+    $url = 'https://www.google.com/recaptcha/api/siteverify';
+    $data = [
+        'secret' => $recaptchaSecret,
+        'response' => $recaptchaToken
+    ];
+
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+    $verifyResponse = curl_exec($ch);
+    curl_close($ch);
+
+    $responseData = json_decode($verifyResponse);
+
+
+    if ($responseData->success && $responseData->score >= 0.5) {
+
+        $recipientEmail = "diegnavpro@gmail.com";
+        $subject = htmlspecialchars($_POST["subject"]);
+        $senderName = htmlspecialchars($_POST["name"]);
+        $senderEmail = htmlspecialchars($_POST["email"]);
+        $senderTel = htmlspecialchars($_POST["tel"]);
+        $message = htmlspecialchars($_POST["message"]);
+
+        $emailTemplate = "
+            Hello,
+
+            Someone has just contacted you. Here are the details:
+
+            Name: $senderName
+            Email: $senderEmail
+            Phone: $senderTel
+
+            Message:
+            $message
+        ";
+
+        $headers = "From: $senderName <$senderEmail>" . "\r\n" .
+                   "Reply-To: $senderEmail" . "\r\n" .
+                   "Content-Type: text/plain; charset=utf-8";
+
+        $mailReturn = mail($recipientEmail, $subject, $emailTemplate, $headers);
+
+        if ($mailReturn) {
+            echo json_encode(['status' => 'success']);
+        } else {
+            echo json_encode(['status' => 'error']);
+        }
+
+    } else {
+        echo json_encode(['status' => 'captcha']);
     }
-  }
-  else {
-    header("Location: ../pages/contact.html?error=1");
-  }
+
+} else {
+    echo json_encode(['status' => 'error']);
+}
