@@ -34,6 +34,8 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf15mErAAAAAO_PiWlhQRinkuXxWOvZRq3oOy_7"></script>
+
 </head>
 
 <body>
@@ -82,7 +84,8 @@
         <div class="container">
           <section class="contactForm">
             <h3>Inquiry Form</h3>
-            <form action="../php/mail.php" method="post">
+            <div id="formMessage" style="display:none;"></div>
+            <form id="contactForm" action="../php/mail.php" method="post">
                 <fieldset>
                     <!-- <legend>By form</legend> -->
                     <div class="contactNameEmail">
@@ -94,6 +97,10 @@
                         <p><input type="text" id="subject" name="subject" placeholder="Subject..." required></p>
                         <p><textarea name="message" id="message" cols="30" rows="5" placeholder="Your message..." required></textarea></p>
                     </div>
+                    <p style="display:none;">
+                      <label>Leave this field empty:</label>
+                      <input type="text" name="website" value="">
+                    </p>
                     <button type="submit" aria-label="Submit form">SUBMIT</button>
                 </fieldset>
             </form>
@@ -135,6 +142,20 @@
               </a>
             </div>
           </section>
+          <div id="successModal" class="modal" style="display:none;">
+            <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <h2>Merci !</h2>
+              <p>Votre demande a bien été envoyée.</p>
+            </div>
+          </div>
+          <div id="errorModal" class="modal" style="display:none;">
+            <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <h2>Une erreur est survenue</h2>
+              <p>Veuillez réessayer, merci.</p>
+            </div>
+          </div>
         </div>
     </main>
     <footer>
