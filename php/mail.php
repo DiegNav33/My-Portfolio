@@ -5,13 +5,19 @@ require __DIR__ . '/../vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// Chargement des variables d'environnement
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
-$dotenv->load();
+function env($key, $default = null) {
+    static $config = null;
+
+    if ($config === null && file_exists(__DIR__ . '/../config.php')) {
+        $config = require __DIR__ . '/../config.php';
+    }
+
+    return $config[$key] ?? $default;
+}
+
 
 header('Content-Type: application/json');
 
-// Vérifie que des données ont bien été postées
 if (!empty($_POST)) {
 
     // Honeypot anti-bot
@@ -19,9 +25,8 @@ if (!empty($_POST)) {
         echo json_encode(['status' => 'captcha']);
         exit;
     }
-
     // Vérification reCAPTCHA
-    $recaptchaSecret = $_ENV['RECAPTCHA_SECRET_KEY'];
+    $recaptchaSecret = env('RECAPTCHA_SECRET_KEY');
     $recaptchaToken = $_POST['recaptcha_token'];
 
     $url = 'https://www.google.com/recaptcha/api/siteverify';
@@ -48,7 +53,6 @@ if (!empty($_POST)) {
         $senderTel = htmlspecialchars($_POST["tel"]);
         $message = nl2br(htmlspecialchars($_POST["message"]));
 
-        // Template HTML avec le header et logo
         $emailBody = "
             <div style='font-family: Arial, sans-serif; color: #333; line-height: 1.5; max-width:600px; margin:auto; border:1px solid #ddd;'>
                 <div style='background-color:#000; padding:20px; text-align:center;'>
@@ -67,7 +71,6 @@ if (!empty($_POST)) {
             </div>
         ";
 
-        // Envoi via Brevo SMTP (PHPMailer)
         $mail = new PHPMailer(true);
         $mail->CharSet = 'UTF-8';
 
@@ -77,7 +80,7 @@ if (!empty($_POST)) {
             $mail->SMTPAuth   = true;
             $mail->AuthType   = 'LOGIN';
             $mail->Username   = '8fbc38001@smtp-brevo.com';
-            $mail->Password   = $_ENV['BREVO_SMTP_KEY'];
+            $mail->Password   = env('BREVO_SMTP_KEY');
             $mail->SMTPSecure = 'tls';
             $mail->Port       = 587;
 
@@ -87,16 +90,18 @@ if (!empty($_POST)) {
             $mail->isHTML(true);
             $mail->Subject = $subject;
             $mail->Body    = $emailBody;
-
             $mail->AltBody = "Name: {$senderName}\nEmail: {$senderEmail}\nPhone: {$senderTel}\nMessage:\n" . strip_tags($message);
 
             $mail->send();
             echo json_encode(['status' => 'success']);
 
         } catch (Exception $e) {
-            error_log("Mailer Error: " . $mail->ErrorInfo);
-            echo json_encode(['status' => 'error']);
-        }
+    echo json_encode([
+        'status' => 'error',
+        'message' => $mail->ErrorInfo
+    ]);
+}
+
 
     } else {
         echo json_encode(['status' => 'captcha']);

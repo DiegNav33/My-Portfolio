@@ -1,0 +1,8 @@
+<FilesMatch "^\.env|config\.php">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
