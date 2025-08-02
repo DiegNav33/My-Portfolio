@@ -4,5 +4,16 @@
 </FilesMatch>
 
 RewriteEngine On
+
+# Forcer HTTPS uniquement si ce n'est pas localhost
+RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1) [NC]
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Supprimer "pages/" et ".php" des URLs (y compris sous-dossiers)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-zA-Z0-9/_-]+)/?$ pages/$1.php [L]
+
+# Gérer l'index proprement
+RewriteRule ^index/?$ index.php [L]
