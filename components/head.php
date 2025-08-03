@@ -36,6 +36,29 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+
+    <script>
+        window.axeptioSettings = {
+          clientId: "688f39d4c155bf31f8ac8bfd",
+          cookiesVersion: "portfolio-en-EU",
+          googleConsentMode: {
+            default: {
+              analytics_storage: "denied",
+              ad_storage: "denied",
+              ad_user_data: "denied",
+              ad_personalization: "denied",
+              wait_for_update: 500
+            }
+          }
+        };
+         
+        (function(d, s) {
+          var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+          e.async = true; e.src = "//static.axept.io/sdk.js";
+          t.parentNode.insertBefore(e, t);
+        })(document, "script");
+    </script>
+    
     <?php if (!empty($activePage) && $activePage === 'contact'): ?>
         <script src="https://www.google.com/recaptcha/api.js?render=6Lf15mErAAAAAO_PiWlhQRinkuXxWOvZRq3oOy_7" async defer></script>
     <?php endif; ?>
